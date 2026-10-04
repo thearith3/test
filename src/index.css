@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Battambang:wght@400;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,600&family=Kantumruy+Pro:wght@400;500;600;700&family=Moul&display=swap');
+@import "tailwindcss";
+
+:root {
+  --maroon-deep: #380D1A;
+  --maroon-royal: #4A1525;
+  --rose-cream: #FFF5F7;
+  --gold-primary: #C5A059;
+  --gold-deep: #B38A38;
+  --gold-dark: #85621E;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Kantumruy Pro', 'Battambang', sans-serif;
+  color: #2B2B2B;
+  background-color: #FFF5F7;
+}
+
+.font-moul { font-family: 'Moul', serif; line-height: 1.8; }
+.font-battambang { font-family: 'Battambang', serif; line-height: 1.85; }
+.font-kantumruy { font-family: 'Kantumruy Pro', sans-serif; }
+.font-editorial { font-family: 'Cormorant Garamond', Georgia, serif; }
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #F5E1A4 0%, #C5A059 45%, #E8C77B 70%, #9E762C 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.kbach-damask-bg {
+  background-color: #380D1A;
+  background-image: 
+    radial-gradient(circle at 50% 35%, rgba(197, 160, 89, 0.18) 0%, rgba(74, 21, 37, 0.4) 55%, rgba(40, 8, 18, 0.95) 100%),
+    url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23C5A059' stroke-width='0.75' stroke-opacity='0.2'%3E%3Cpath d='M40 4 L48 20 L64 20 L52 32 L56 48 L40 38 L24 48 L28 32 L16 20 L32 20 Z'/%3E%3Cpath d='M40 0 C50 15 65 15 80 0 C65 15 65 25 80 40 C65 25 50 25 40 40 C30 25 15 25 0 40 C15 25 15 15 0 0 C15 15 30 15 40 0 Z'/%3E%3Ccircle cx='40' cy='40' r='5'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.cream-kbach-bg {
+  background-color: #FFF5F7;
+  background-image: 
+    radial-gradient(circle at 50% 0%, rgba(253, 242, 244, 0.9) 0%, rgba(255, 245, 247, 0.98) 100%),
+    url("data:image/svg+xml,%3Csvg width='72' height='72' viewBox='0 0 72 72' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23C5A059' stroke-width='0.6' stroke-opacity='0.09'%3E%3Cpath d='M36 6 C42 18 54 18 66 6 C54 18 54 30 66 36 C54 30 42 30 36 42 C30 30 18 30 6 36 C18 30 18 18 6 6 C18 18 30 18 36 6 Z'/%3E%3Ccircle cx='36' cy='24' r='3'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.gate-door-left {
+  transition: transform 1.25s cubic-bezier(0.22, 1, 0.36, 1), opacity 1.1s ease-in-out;
+  transform-origin: left center;
+  will-change: transform, opacity;
+}
+
+.gate-door-right {
+  transition: transform 1.25s cubic-bezier(0.22, 1, 0.36, 1), opacity 1.1s ease-in-out;
+  transform-origin: right center;
+  will-change: transform, opacity;
+}
+
+.gate-seal-wrapper {
+  transition: transform 0.65s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.55s ease-out;
+  will-change: transform, opacity;
+}
+
+.gates-open .gate-door-left {
+  transform: translateX(-102%) rotateY(-12deg);
+  opacity: 0;
+}
+
+.gates-open .gate-door-right {
+  transform: translateX(102%) rotateY(12deg);
+  opacity: 0;
+}
+
+.gates-open .gate-seal-wrapper {
+  transform: scale(1.15);
+  opacity: 0;
+  pointer-events: none;
+}
+
+@keyframes spinSlow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.disc-spinning {
+  animation: spinSlow 9s linear infinite;
+}
+
+@keyframes sealPulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.035); }
+}
+
+.seal-pulse {
+  animation: sealPulse 3s ease-in-out infinite;
+}
+
+.petal-item {
+  position: fixed;
+  top: -40px;
+  pointer-events: none;
+  z-index: 35;
+  will-change: transform, opacity;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .disc-spinning, .seal-pulse { animation: none !important; }
+  .gate-door-left, .gate-door-right, .gate-seal-wrapper { transition-duration: 0.1s !important; }
+}

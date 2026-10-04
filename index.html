@@ -1,0 +1,1806 @@
+<!doctype html>
+<html lang="km" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>សិរីមង្គលអាពាហ៍ពិពាហ៍ — Khmer Luxury Wedding E-Invitation</title>
+    <meta
+      name="description"
+      content="Traditional Khmer Luxury Wedding Digital E-Invitation for Sovannarith & Chanmony featuring interactive royal gates, ceremony schedule with Google Search grounded weather forecast, photo gallery, RSVP wishes, and digital gift QR codes."
+    />
+    <meta property="og:title" content="សិរីមង្គលអាពាហ៍ពិពាហ៍ — Khmer Luxury Wedding E-Invitation" />
+    <meta
+      property="og:description"
+      content="Traditional Khmer Luxury Wedding Digital E-Invitation for Sovannarith & Chanmony featuring interactive royal gates, ceremony schedule with Google Search grounded weather forecast, photo gallery, RSVP wishes, and digital gift QR codes."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Google Fonts for Khmer & Editorial Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Battambang:wght@400;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,600&family=Kantumruy+Pro:wght@400;500;600;700&family=Moul&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS via CDN + Local Vite CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/src/index.css" />
+
+    <style>
+      body {
+        font-family: 'Kantumruy Pro', 'Battambang', sans-serif;
+        color: #2B2B2B;
+        background-color: #FFF5F7;
+        overflow-x: hidden;
+      }
+      .font-moul { font-family: 'Moul', serif; line-height: 1.8; }
+      .font-battambang { font-family: 'Battambang', serif; line-height: 1.85; }
+      .font-kantumruy { font-family: 'Kantumruy Pro', sans-serif; }
+      .font-editorial { font-family: 'Cormorant Garamond', Georgia, serif; }
+      .gold-foil-text {
+        background: linear-gradient(135deg, #FBF0C9 0%, #D4AF37 38%, #AA802C 72%, #F3DF9E 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .gold-heading-dark {
+        background: linear-gradient(135deg, #8F681E 0%, #B38A38 50%, #7C5814 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .kbach-border-card {
+        background: rgba(255, 255, 255, 0.92);
+        border: 1px solid rgba(197, 160, 89, 0.38);
+        box-shadow: 0 12px 32px -12px rgba(74, 21, 37, 0.08);
+      }
+    </style>
+  </head>
+
+  <body class="cream-kbach-bg text-[#2B2B2B] antialiased selection:bg-[#4A1525] selection:text-[#F5E1A4] overflow-hidden" id="app-body">
+    <!-- FLOATING ROSE PETAL CONTAINER -->
+    <div id="petal-container" aria-hidden="true" class="fixed inset-0 pointer-events-none z-30 overflow-hidden"></div>
+
+    <!-- ===================================================================== -->
+    <!-- 1. INTERACTIVE OPENING DOOR COVER (ទ្វារបើកលិខិតអញ្ជើញ)                -->
+    <!-- ===================================================================== -->
+    <div
+      id="gate-overlay"
+      role="dialog"
+      aria-modal="true"
+      aria-label="ទ្វារបើកលិខិតអញ្ជើញមង្គលការ"
+      class="fixed inset-0 z-50 flex items-center justify-center overflow-hidden select-none"
+      style="perspective: 1400px;"
+    >
+      <!-- Left Royal Door -->
+      <div class="gate-door-left relative w-1/2 h-full kbach-damask-bg border-r-2 border-[#C5A059]/70 flex flex-col justify-between p-4 sm:p-8 shadow-2xl">
+        <div class="w-16 h-16 sm:w-24 sm:h-24 text-[#C5A059]/80">
+          <svg viewBox="0 0 100 100" fill="none" class="w-full h-full">
+            <path d="M6 6 H88 M6 6 V88 M16 16 H68 M16 16 V68" stroke="currentColor" stroke-width="2"/>
+            <path d="M22 22 C42 22 45 38 62 22 C45 42 42 45 22 62 C38 45 22 42 22 22 Z" fill="currentColor"/>
+            <circle cx="16" cy="16" r="4" fill="#F5E1A4"/>
+          </svg>
+        </div>
+        <div class="my-auto border-y border-l border-[#C5A059]/30 h-3/5 ml-2 sm:ml-6 rounded-l-2xl relative">
+          <div class="absolute inset-2 border-y border-l border-[#C5A059]/15 rounded-l-xl"></div>
+        </div>
+        <div class="w-16 h-16 sm:w-24 sm:h-24 text-[#C5A059]/80 rotate-[-90deg]">
+          <svg viewBox="0 0 100 100" fill="none" class="w-full h-full">
+            <path d="M6 6 H88 M6 6 V88 M16 16 H68 M16 16 V68" stroke="currentColor" stroke-width="2"/>
+            <path d="M22 22 C42 22 45 38 62 22 C45 42 42 45 22 62 C38 45 22 42 22 22 Z" fill="currentColor"/>
+            <circle cx="16" cy="16" r="4" fill="#F5E1A4"/>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Right Royal Door -->
+      <div class="gate-door-right relative w-1/2 h-full kbach-damask-bg border-l-2 border-[#C5A059]/70 flex flex-col justify-between items-end p-4 sm:p-8 shadow-2xl">
+        <div class="w-16 h-16 sm:w-24 sm:h-24 text-[#C5A059]/80 rotate-90">
+          <svg viewBox="0 0 100 100" fill="none" class="w-full h-full">
+            <path d="M6 6 H88 M6 6 V88 M16 16 H68 M16 16 V68" stroke="currentColor" stroke-width="2"/>
+            <path d="M22 22 C42 22 45 38 62 22 C45 42 42 45 22 62 C38 45 22 42 22 22 Z" fill="currentColor"/>
+            <circle cx="16" cy="16" r="4" fill="#F5E1A4"/>
+          </svg>
+        </div>
+        <div class="my-auto border-y border-r border-[#C5A059]/30 h-3/5 mr-2 sm:mr-6 w-full rounded-r-2xl relative">
+          <div class="absolute inset-2 border-y border-r border-[#C5A059]/15 rounded-r-xl"></div>
+        </div>
+        <div class="w-16 h-16 sm:w-24 sm:h-24 text-[#C5A059]/80 rotate-180">
+          <svg viewBox="0 0 100 100" fill="none" class="w-full h-full">
+            <path d="M6 6 H88 M6 6 V88 M16 16 H68 M16 16 V68" stroke="currentColor" stroke-width="2"/>
+            <path d="M22 22 C42 22 45 38 62 22 C45 42 42 45 22 62 C38 45 22 42 22 22 Z" fill="currentColor"/>
+            <circle cx="16" cy="16" r="4" fill="#F5E1A4"/>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Center Royal Gate Seal & Content -->
+      <div class="gate-seal-wrapper absolute inset-0 flex flex-col items-center justify-between py-8 sm:py-12 px-4 text-center z-10 pointer-events-none">
+        <div class="max-w-md mx-auto flex flex-col items-center">
+          <svg class="w-20 h-14 text-[#E5C882] mb-2" viewBox="0 0 120 80" fill="none">
+            <path d="M60 6 L68 28 L86 18 L76 38 L98 42 L74 52 L60 72 L46 52 L22 42 L44 38 L34 18 L52 28 Z" fill="url(#goldGradGate)" stroke="#FBF0C9" stroke-width="1.2"/>
+            <path d="M20 66 Q60 54 100 66" stroke="#E5C882" stroke-width="2" stroke-linecap="round"/>
+            <defs>
+              <linearGradient id="goldGradGate" x1="0" y1="0" x2="120" y2="80" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#FBF0C9"/>
+                <stop offset="50%" stop-color="#C5A059"/>
+                <stop offset="100%" stop-color="#8A6421"/>
+              </linearGradient>
+            </defs>
+          </svg>
+          <p class="text-xs sm:text-sm tracking-[0.22em] text-[#E5C882]/90 font-editorial uppercase mb-1">
+            The Royal Khmer Wedding Invitation
+          </p>
+          <h1 class="font-moul text-2xl sm:text-4xl gold-foil-text drop-shadow-md">
+            សិរីមង្គលអាពាហ៍ពិពាហ៍
+          </h1>
+          <p class="mt-2 text-sm sm:text-base text-[#FFF5F7]/90 font-battambang">
+            ជា សុវណ្ណារិទ្ធ <span class="text-[#E5C882] mx-1.5">♥</span> ហេង ចាន់មុនី
+          </p>
+        </div>
+
+        <!-- Center Interactive Golden Seal Button (បើកលិខិត) -->
+        <div class="my-auto flex flex-col items-center pointer-events-auto">
+          <button
+            id="open-invitation-btn"
+            type="button"
+            aria-label="បើកលិខិតអញ្ជើញ (Open Wedding Invitation)"
+            class="seal-pulse group relative w-44 h-44 sm:w-52 sm:h-52 rounded-full flex flex-col items-center justify-center cursor-pointer focus:outline-none focus-visible:ring-4 focus-visible:ring-[#F5E1A4]"
+          >
+            <svg class="absolute inset-0 w-full h-full text-[#C5A059] transition-transform duration-700 group-hover:rotate-45" viewBox="0 0 200 200" fill="none">
+              <circle cx="100" cy="100" r="95" stroke="url(#sealRim)" stroke-width="2.5" stroke-dasharray="6 4"/>
+              <circle cx="100" cy="100" r="86" stroke="#F5E1A4" stroke-width="1.2" stroke-opacity="0.6"/>
+              <defs>
+                <linearGradient id="sealRim" x1="0" y1="0" x2="200" y2="200" gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stop-color="#FBF0C9"/>
+                  <stop offset="50%" stop-color="#C5A059"/>
+                  <stop offset="100%" stop-color="#8A6421"/>
+                </linearGradient>
+              </defs>
+            </svg>
+
+            <div class="relative w-36 h-36 sm:w-42 sm:h-42 rounded-full bg-gradient-to-b from-[#5B1A2E] via-[#4A1525] to-[#2C0913] border-2 border-[#E5C882] shadow-[0_0_40px_rgba(197,160,89,0.45)] flex flex-col items-center justify-center p-4 transition-transform duration-200 group-hover:scale-105 group-active:scale-95">
+              <div class="text-xs font-editorial tracking-[0.25em] text-[#E5C882]/90 mb-1">S &amp; C</div>
+              <svg class="w-8 h-8 text-[#F5E1A4] mb-1.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M12 21s-7-4.35-9.5-8.5C.5 9 2.5 5 6.5 5c2.3 0 4 1.5 5.5 3.3C13.5 6.5 15.2 5 17.5 5 21.5 5 23.5 9 21.5 12.5 19 16.65 12 21 12 21z" fill="rgba(245,225,164,0.2)"/>
+              </svg>
+              <span class="font-moul text-lg sm:text-xl gold-foil-text tracking-wide">
+                បើកលិខិត
+              </span>
+              <span class="text-[11px] text-[#FFF5F7]/85 font-kantumruy mt-0.5 whitespace-nowrap">
+                ចុចដើម្បីបើកធៀបមង្គលការ
+              </span>
+            </div>
+          </button>
+        </div>
+
+        <!-- Bottom Guest Honorific Plaque on Gate -->
+        <div class="max-w-lg w-full mx-auto bg-[#2B0913]/85 backdrop-blur-md border border-[#C5A059]/60 rounded-2xl px-5 py-4 text-center pointer-events-auto shadow-xl">
+          <p class="font-battambang text-xs sm:text-sm text-[#E5C882] mb-1">
+            សូមគោរពអញ្ជើញ
+          </p>
+          <p id="gate-guest-name" class="font-moul text-sm sm:text-base text-[#FFFDF9] leading-relaxed">
+            ឯកឧត្តម លោកជំទាវ លោក លោកស្រី អ្នកនាងកញ្ញា
+          </p>
+          <div class="mt-2 pt-2 border-t border-[#C5A059]/25 flex items-center justify-center gap-3 text-xs text-[#E5C882]/85">
+            <span>ថ្ងៃសៅរ៍ ទី១៤ ខែវិច្ឆិកា ឆ្នាំ២០២៦</span>
+            <span aria-hidden="true">·</span>
+            <button
+              type="button"
+              id="customize-guest-btn"
+              class="underline hover:text-white transition-colors cursor-pointer whitespace-nowrap min-h-[32px] px-1"
+            >
+              ប្តូរឈ្មោះភ្ញៀវកិត្តិយស
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================================================================== -->
+    <!-- TOP BAR CONTRACT (3-Zone Navigation Header)                           -->
+    <!-- ===================================================================== -->
+    <header class="sticky top-0 z-30 h-14 bg-[#FFF5F7]/90 backdrop-blur-md border-b border-[#C5A059]/30 px-4 sm:px-8 flex items-center justify-between">
+      <a href="#hero-section" class="font-moul text-sm sm:text-base text-[#4A1525] whitespace-nowrap shrink-0">
+        សុវណ្ណារិទ្ធ ♥ ចាន់មុនី
+      </a>
+      <nav aria-label="ផ្នែកនៃលិខិតអញ្ជើញ" class="hidden md:flex items-center gap-6 text-sm font-medium text-[#2B2B2B]">
+        <a href="#hero-section" class="hover:text-[#4A1525] hover:underline underline-offset-4 transition-colors whitespace-nowrap">ក្បាលលិខិត</a>
+        <a href="#program-section" class="hover:text-[#4A1525] hover:underline underline-offset-4 transition-colors whitespace-nowrap">កម្មវិធី &amp; អាកាសធាតុ</a>
+        <a href="#location-section" class="hover:text-[#4A1525] hover:underline underline-offset-4 transition-colors whitespace-nowrap">ទីតាំងកម្មវិធី</a>
+        <a href="#gallery-section" class="hover:text-[#4A1525] hover:underline underline-offset-4 transition-colors whitespace-nowrap">វិចិត្រសាល</a>
+        <a href="#wishes-section" class="hover:text-[#4A1525] hover:underline underline-offset-4 transition-colors whitespace-nowrap">សារជូនពរ &amp; ចំណងដៃ</a>
+      </nav>
+      <div class="flex items-center gap-2">
+        <button
+          type="button"
+          id="replay-gate-btn"
+          class="px-3.5 py-2 min-h-[40px] text-xs font-medium text-[#FFFDF9] bg-[#4A1525] hover:bg-[#380D1A] rounded-lg transition-colors whitespace-nowrap cursor-pointer"
+        >
+          បិទ/បើកទ្វារធៀប
+        </button>
+      </div>
+    </header>
+
+    <!-- ===================================================================== -->
+    <!-- MAIN INVITATION CONTAINER                                             -->
+    <!-- ===================================================================== -->
+    <main class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-24 space-y-16 sm:space-y-24">
+
+      <!-- =================================================================== -->
+      <!-- 2. MAIN HEADER & NAMES (ក្បាលលិខិត និង ឈ្មោះកូនកំលោះ-កូនក្រមុំ)      -->
+      <!-- =================================================================== -->
+      <section id="hero-section" class="relative kbach-border-card rounded-3xl p-6 sm:p-12 lg:p-16 overflow-hidden text-center">
+        <!-- Top Ornate Crest -->
+        <div class="pointer-events-none flex items-start justify-between -mt-2 -mx-2 sm:-mt-6 sm:-mx-6 mb-4" aria-hidden="true">
+          <svg class="w-28 h-28 sm:w-40 sm:h-40" viewBox="0 0 160 160" fill="none">
+            <path d="M8 8 H130 C95 16 70 28 45 55 C24 78 14 102 8 135 Z" fill="#FDF2F4"/>
+            <path d="M12 12 H120 M12 12 V120" stroke="#C5A059" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="42" cy="42" r="18" fill="#E8B4B8" fill-opacity="0.45" stroke="#B38A38" stroke-width="1.2"/>
+          </svg>
+          <div class="pt-4 sm:pt-6 flex flex-col items-center">
+            <svg class="w-20 h-14 text-[#B38A38]" viewBox="0 0 120 80" fill="none">
+              <circle cx="46" cy="42" r="18" stroke="#B38A38" stroke-width="2.5" fill="rgba(197,160,89,0.08)"/>
+              <circle cx="74" cy="42" r="18" stroke="#C5A059" stroke-width="2.5" fill="rgba(197,160,89,0.08)"/>
+              <path d="M60 18 C57 13 50 13 50 19 C50 24 60 30 60 30 C60 30 70 24 70 19 C70 13 63 13 60 18 Z" fill="#4A1525" stroke="#C5A059" stroke-width="1.2"/>
+            </svg>
+          </div>
+          <svg class="w-28 h-28 sm:w-40 sm:h-40 scale-x-[-1]" viewBox="0 0 160 160" fill="none">
+            <path d="M8 8 H130 C95 16 70 28 45 55 C24 78 14 102 8 135 Z" fill="#FDF2F4"/>
+            <path d="M12 12 H120 M12 12 V120" stroke="#C5A059" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="42" cy="42" r="18" fill="#E8B4B8" fill-opacity="0.45" stroke="#B38A38" stroke-width="1.2"/>
+          </svg>
+        </div>
+
+        <p class="font-editorial text-sm sm:text-base tracking-[0.22em] text-[#85621E] uppercase">
+          Auspicious Khmer Wedding Ceremony
+        </p>
+        <h2 class="font-moul text-2xl sm:text-4xl lg:text-5xl gold-heading-dark mt-2 mb-8" style="text-wrap: balance;">
+          សិរីមង្គលអាពាហ៍ពិពាហ៍
+        </h2>
+
+        <!-- Two Columns Parents' Names -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-10 max-w-3xl mx-auto my-8 pb-8 border-b border-[#C5A059]/30">
+          <div class="space-y-1.5 text-center sm:text-left sm:pl-4">
+            <p class="text-xs font-semibold text-[#85621E] tracking-wider mb-2">មាតាបិតាខាងប្រុស</p>
+            <p class="font-moul text-base sm:text-lg text-[#4A1525]">ឯកឧត្តម ជា សុវណ្ណា</p>
+            <p class="font-moul text-base sm:text-lg text-[#4A1525]">លោកជំទាវ លី ម៉ាលីន</p>
+          </div>
+          <div class="space-y-1.5 text-center sm:text-right sm:pr-4">
+            <p class="text-xs font-semibold text-[#85621E] tracking-wider mb-2">មាតាបិតាខាងស្រី</p>
+            <p class="font-moul text-base sm:text-lg text-[#4A1525]">ឧកញ៉ា ហេង ចាន់ថល</p>
+            <p class="font-moul text-base sm:text-lg text-[#4A1525]">លោកជំទាវ សុខ សុគន្ធា</p>
+          </div>
+        </div>
+
+        <!-- Invitation Paragraph -->
+        <div class="max-w-2xl mx-auto space-y-4 my-8">
+          <h3 class="font-moul text-lg sm:text-xl text-[#85621E]">សូមគោរពអញ្ជើញ</h3>
+          <p class="font-battambang text-base sm:text-lg text-[#2B2B2B] leading-loose">
+            សម្តេច ទ្រង់ ឯកឧត្តម លោកជំទាវ អ្នកឧកញ៉ា ឧកញ៉ា លោក លោកស្រី អ្នកនាងកញ្ញា អញ្ជើញចូលរួមជាអធិបតី និងជាភ្ញៀវកិត្តិយស ដើម្បីប្រសិទ្ធពរជ័យ សិរីសួស្តី ជ័យមង្គល ក្នុងពិធីរៀបអាពាហ៍ពិពាហ៍ កូនប្រុស-កូនស្រី របស់យើងខ្ញុំទាំងពីរ៖
+          </p>
+          <div class="inline-block pt-1">
+            <p class="text-xs text-[#85621E]">ភ្ញៀវកិត្តិយស៖ <strong id="inner-guest-name" class="text-[#4A1525] font-semibold">ឯកឧត្តម លោកជំទាវ លោក លោកស្រី អ្នកនាងកញ្ញា</strong></p>
+          </div>
+        </div>
+
+        <!-- Groom & Bride Prominent Names -->
+        <div class="grid grid-cols-1 md:grid-cols-11 items-center gap-6 max-w-4xl mx-auto my-10 py-8 px-4 sm:px-8 rounded-2xl bg-[#FDF2F4]/90 border border-[#C5A059]/35">
+          <div class="md:col-span-5 space-y-2">
+            <p class="font-battambang text-sm text-[#85621E]">កូនប្រុសនាម</p>
+            <h3 class="font-moul text-2xl sm:text-3xl text-[#4A1525]">ជា សុវណ្ណារិទ្ធ</h3>
+            <p class="font-editorial italic text-base text-[#85621E]">Chea Sovannarith</p>
+          </div>
+          <div class="md:col-span-1 flex flex-col items-center justify-center">
+            <div class="w-12 h-12 rounded-full bg-[#4A1525] text-[#F5E1A4] flex items-center justify-center border border-[#C5A059] shadow-sm">
+              <span class="font-moul text-xs">ជាគូនឹង</span>
+            </div>
+          </div>
+          <div class="md:col-span-5 space-y-2">
+            <p class="font-battambang text-sm text-[#85621E]">កូនស្រីនាម</p>
+            <h3 class="font-moul text-2xl sm:text-3xl text-[#4A1525]">ហេង ចាន់មុនី</h3>
+            <p class="font-editorial italic text-base text-[#85621E]">Heng Chanmony</p>
+          </div>
+        </div>
+
+        <!-- Wedding Date & Venue Summary + Countdown -->
+        <div class="max-w-2xl mx-auto space-y-6 pt-4">
+          <div class="space-y-2">
+            <p class="font-battambang text-sm sm:text-base text-[#2B2B2B]">
+              ដែលនឹងប្រព្រឹត្តទៅនៅ <strong class="font-moul text-[#4A1525] font-normal">ថ្ងៃសៅរ៍ ទី១៤ ខែវិច្ឆិកា ឆ្នាំ២០២៦</strong>
+            </p>
+            <p class="font-battambang text-sm sm:text-base text-[#85621E] font-semibold">
+              នៅមជ្ឈមណ្ឌលសន្និបាត និងពិព័រណ៍កោះពេជ្រ (អគារ A &amp; B) រាជធានីភ្នំពេញ
+            </p>
+          </div>
+
+          <!-- Live Countdown Timer -->
+          <div class="pt-4 border-t border-[#C5A059]/25">
+            <p class="text-xs text-[#85621E] mb-3">រាប់ថយក្រោយទៅកាន់ថ្ងៃមង្គលការ · Countdown to the Auspicious Day</p>
+            <div class="grid grid-cols-4 gap-2 sm:gap-4 max-w-md mx-auto tabular-nums" id="countdown-grid">
+              <div class="py-3 px-2 rounded-xl bg-white border border-[#C5A059]/30">
+                <div id="cd-days" class="font-editorial font-bold text-2xl sm:text-3xl text-[#4A1525]">00</div>
+                <div class="text-xs text-[#85621E] mt-0.5">ថ្ងៃ (Days)</div>
+              </div>
+              <div class="py-3 px-2 rounded-xl bg-white border border-[#C5A059]/30">
+                <div id="cd-hours" class="font-editorial font-bold text-2xl sm:text-3xl text-[#4A1525]">00</div>
+                <div class="text-xs text-[#85621E] mt-0.5">ម៉ោង (Hrs)</div>
+              </div>
+              <div class="py-3 px-2 rounded-xl bg-white border border-[#C5A059]/30">
+                <div id="cd-mins" class="font-editorial font-bold text-2xl sm:text-3xl text-[#4A1525]">00</div>
+                <div class="text-xs text-[#85621E] mt-0.5">នាទី (Mins)</div>
+              </div>
+              <div class="py-3 px-2 rounded-xl bg-white border border-[#C5A059]/30">
+                <div id="cd-secs" class="font-editorial font-bold text-2xl sm:text-3xl text-[#4A1525]">00</div>
+                <div class="text-xs text-[#85621E] mt-0.5">វិនាទី (Secs)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================================================================== -->
+      <!-- 3. WEDDING PROGRAM & AGENDA + MINI WEATHER COMPONENT                -->
+      <!-- =================================================================== -->
+      <section id="program-section" class="kbach-border-card rounded-3xl p-6 sm:p-12">
+        <div class="text-center max-w-2xl mx-auto mb-8">
+          <p class="font-editorial text-sm tracking-[0.2em] text-[#85621E] uppercase">Ceremony Schedule &amp; Weather</p>
+          <h2 class="font-moul text-xl sm:text-3xl gold-heading-dark mt-1" style="text-wrap: balance;">
+            កម្មវិធីសិរីមង្គលអាពាហ៍ពិពាហ៍
+          </h2>
+          <p class="font-battambang text-sm sm:text-base text-[#2B2B2B]/80 mt-2">
+            ថ្ងៃសៅរ៍ ទី១៤ ខែវិច្ឆិកា ឆ្នាំ២០២៦ · មជ្ឈមណ្ឌលសន្និបាត និងពិព័រណ៍កោះពេជ្រ
+          </p>
+
+          <!-- Interactive Filter Tabs -->
+          <div class="inline-flex items-center gap-1 p-1 mt-6 bg-[#FDF2F4] border border-[#C5A059]/35 rounded-xl">
+            <button
+              type="button"
+              data-program-filter="all"
+              class="program-tab-btn px-4 py-2 min-h-[40px] text-xs sm:text-sm font-medium rounded-lg transition-colors whitespace-nowrap cursor-pointer bg-[#4A1525] text-[#FFFDF9]"
+            >
+              កម្មវិធីទាំងអស់
+            </button>
+            <button
+              type="button"
+              data-program-filter="morning"
+              class="program-tab-btn px-4 py-2 min-h-[40px] text-xs sm:text-sm font-medium rounded-lg transition-colors whitespace-nowrap cursor-pointer text-[#4A1525] hover:bg-[#4A1525]/10"
+            >
+              ពិធីពេលព្រឹក
+            </button>
+            <button
+              type="button"
+              data-program-filter="evening"
+              class="program-tab-btn px-4 py-2 min-h-[40px] text-xs sm:text-sm font-medium rounded-lg transition-colors whitespace-nowrap cursor-pointer text-[#4A1525] hover:bg-[#4A1525]/10"
+            >
+              ពិធីពេលល្ងាច
+            </button>
+          </div>
+        </div>
+
+        <!-- ================================================================= -->
+        <!-- MINI WEATHER COMPONENT (PHNOM PENH FORECAST VIA GOOGLE SEARCH)     -->
+        <!-- ================================================================= -->
+        <div id="wedding-weather-card" class="mb-10 rounded-2xl bg-gradient-to-br from-[#FFF5F7] via-[#FFFDF9] to-[#FDF2F4] border border-[#C5A059]/50 p-5 sm:p-7 shadow-sm">
+          <!-- Weather Header -->
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-4 border-b border-[#C5A059]/30">
+            <div class="flex items-center gap-3">
+              <div class="w-11 h-11 rounded-xl bg-[#4A1525] text-[#F5E1A4] flex items-center justify-center shrink-0 shadow-sm">
+                <!-- Sun & Cloud SVG Icon -->
+                <svg class="w-6 h-6 text-[#F5E1A4]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M2 12h2m16 0h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
+                  <circle cx="12" cy="12" r="4"/>
+                </svg>
+              </div>
+              <div>
+                <div class="flex items-center gap-2">
+                  <h3 class="font-moul text-sm sm:text-base text-[#4A1525]">
+                    ការព្យាករណ៍អាកាសធាតុថ្ងៃមង្គលការ (Phnom Penh Forecast)
+                  </h3>
+                  <!-- Google Grounding Badge -->
+                  <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-[#4A1525]/10 text-[#4A1525] border border-[#C5A059]/40 whitespace-nowrap">
+                    <svg class="w-2.5 h-2.5" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2v-2h2v2zm0-4h-2V7h2v5.5z"/>
+                    </svg>
+                    Google Search Grounded
+                  </span>
+                </div>
+                <p class="text-xs text-[#85621E] mt-0.5">
+                  រាជធានីភ្នំពេញ · ថ្ងៃសៅរ៍ ទី១៤ ខែវិច្ឆិកា ឆ្នាំ២០២៦ (ដើមរដូវរំហើយ / Dry Season)
+                </p>
+              </div>
+            </div>
+
+            <!-- Refresh Button -->
+            <button
+              type="button"
+              id="refresh-weather-btn"
+              class="self-start sm:self-center px-3 py-1.5 min-h-[36px] text-xs font-medium text-[#4A1525] hover:text-[#85621E] hover:bg-[#4A1525]/5 rounded-lg border border-[#C5A059]/40 transition-colors flex items-center gap-1.5 cursor-pointer whitespace-nowrap"
+            >
+              <svg id="refresh-weather-icon" class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/>
+              </svg>
+              <span>ពិនិត្យអាកាសធាតុផ្ទាល់</span>
+            </button>
+          </div>
+
+          <!-- Weather 4-Metric Grid -->
+          <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 my-4">
+            <!-- Day & Evening Temperature -->
+            <div class="p-3.5 rounded-xl bg-white/90 border border-[#C5A059]/30">
+              <span class="text-[11px] text-[#85621E] block font-medium">សីតុណ្ហភាព (Temp)</span>
+              <div class="flex items-baseline gap-2 mt-1">
+                <span id="wt-temp-day" class="font-editorial text-2xl sm:text-3xl font-bold text-[#4A1525] tabular-nums">31°C</span>
+                <span class="text-xs text-[#85621E]">យប់ <strong id="wt-temp-night" class="tabular-nums font-semibold">23°C</strong></span>
+              </div>
+              <span class="text-[10px] text-[#2B2B2B]/70 block mt-0.5">High: 31°C / Low: 23°C</span>
+            </div>
+
+            <!-- Sky Condition -->
+            <div class="p-3.5 rounded-xl bg-white/90 border border-[#C5A059]/30">
+              <span class="text-[11px] text-[#85621E] block font-medium">ស្ថានភាពមេឃ (Condition)</span>
+              <span id="wt-condition-khmer" class="font-kantumruy font-semibold text-xs sm:text-sm text-[#4A1525] block mt-1 line-clamp-1">
+                មេឃស្រឡះ ពន្លឺថ្ងៃស្រាល
+              </span>
+              <span id="wt-condition-en" class="text-[10px] text-[#2B2B2B]/70 block mt-0.5 line-clamp-1">
+                Sunny &amp; pleasant breeze
+              </span>
+            </div>
+
+            <!-- Rain Probability -->
+            <div class="p-3.5 rounded-xl bg-white/90 border border-[#C5A059]/30">
+              <span class="text-[11px] text-[#85621E] block font-medium">ឱកាសភ្លៀង (Precipitation)</span>
+              <div class="flex items-baseline gap-1 mt-1">
+                <span id="wt-rain" class="font-editorial text-2xl sm:text-3xl font-bold text-[#4A1525] tabular-nums">10%</span>
+                <span class="text-[11px] text-emerald-700 font-semibold">ទាបបំផុត (Ideal)</span>
+              </div>
+              <span class="text-[10px] text-[#2B2B2B]/70 block mt-0.5">គ្មានភ្លៀងរំខានកម្មវិធី</span>
+            </div>
+
+            <!-- Humidity & Wind -->
+            <div class="p-3.5 rounded-xl bg-white/90 border border-[#C5A059]/30">
+              <span class="text-[11px] text-[#85621E] block font-medium">សំណើម &amp; ខ្យល់ (Humidity/Wind)</span>
+              <div class="flex items-baseline gap-1.5 mt-1">
+                <span id="wt-humidity" class="font-editorial text-xl sm:text-2xl font-bold text-[#4A1525] tabular-nums">65%</span>
+                <span class="text-xs text-[#85621E]">·</span>
+                <span id="wt-wind" class="text-xs font-semibold text-[#4A1525] tabular-nums">12 km/h</span>
+              </div>
+              <span class="text-[10px] text-[#2B2B2B]/70 block mt-0.5">ជំនោររដូវរំហើយពីទិសឦសាន</span>
+            </div>
+          </div>
+
+          <!-- Wedding Attire Advice & Google Grounding Citations -->
+          <div class="pt-3 border-t border-[#C5A059]/25 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs">
+            <div class="flex items-start gap-2">
+              <span class="text-[#C5A059] text-base leading-none">✨</span>
+              <p id="wt-advice" class="font-battambang text-[#2B2B2B]/90 leading-relaxed">
+                <strong class="text-[#4A1525] font-semibold">ការណែនាំ៖</strong> អាកាសធាតុដើមរដូវរំហើយត្រជាក់ស្រួល ស័ក្តិសមឥតខ្ចោះសម្រាប់ពិធីហែជំនូនពេលព្រឹក និងរ៉ូបរាត្រីសមោសរក្នុងសាលមហោស្រពកោះពេជ្រ។
+              </p>
+            </div>
+          </div>
+
+          <!-- Grounding Source Citations List -->
+          <div id="wt-sources-container" class="mt-2 pt-2 border-t border-[#C5A059]/15 flex flex-wrap items-center gap-2 text-[11px] text-[#85621E]">
+            <span class="font-medium text-[#4A1525]">ប្រភពផ្ទៀងផ្ទាត់ Google Search:</span>
+            <div id="wt-sources-list" class="flex flex-wrap items-center gap-1.5">
+              <a href="https://mowram.gov.kh" target="_blank" rel="noopener noreferrer" class="hover:underline text-[#4A1525] font-medium">
+                MOWRAM Cambodia ↗
+              </a>
+              <span aria-hidden="true">·</span>
+              <a href="https://weather.com" target="_blank" rel="noopener noreferrer" class="hover:underline text-[#4A1525] font-medium">
+                Phnom Penh Climate Statistics ↗
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Timeline List -->
+        <div class="max-w-3xl mx-auto divide-y divide-[#C5A059]/25" id="program-timeline-list">
+          <div data-period="morning" class="program-item py-5 flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6">
+            <div class="sm:w-44 shrink-0">
+              <span class="font-moul text-sm sm:text-base text-[#85621E] tabular-nums">ម៉ោង ០៦:៣០ ព្រឹក</span>
+              <span class="block text-xs text-[#2B2B2B]/60">06:30 AM · ពេលព្រឹក</span>
+            </div>
+            <div class="flex-1">
+              <h3 class="font-moul text-base sm:text-lg text-[#4A1525]">ពិធីហែជំនូន (កំណត់)</h3>
+              <p class="font-battambang text-sm text-[#2B2B2B]/85 mt-1">
+                ជួបជុំភ្ញៀវកិត្តិយស រៀបចំក្បួនដង្ហែជំនូនប្រពៃណីខ្មែរ និងពិធីសែនក្រុងពាលី។
+              </p>
+            </div>
+          </div>
+
+          <div data-period="morning" class="program-item py-5 flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6">
+            <div class="sm:w-44 shrink-0">
+              <span class="font-moul text-sm sm:text-base text-[#85621E] tabular-nums">ម៉ោង ០៧:៣០ ព្រឹក</span>
+              <span class="block text-xs text-[#2B2B2B]/60">07:30 AM · ពេលព្រឹក</span>
+            </div>
+            <div class="flex-1">
+              <h3 class="font-moul text-base sm:text-lg text-[#4A1525]">ពិធីនិមន្តព្រះសង្ឃចម្រើនព្រះបរិត្ត និង ពិធីសំពះផ្ទឹម</h3>
+              <p class="font-battambang text-sm text-[#2B2B2B]/85 mt-1">
+                ពិធីសូត្រមន្តចម្រើនព្រះបរិត្ត ប្រសិទ្ធពរជ័យ និងពិធីសំពះផ្ទឹមតាមគន្លងប្រពៃណីជាតិ។
+              </p>
+            </div>
+          </div>
+
+          <div data-period="morning" class="program-item py-5 flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6">
+            <div class="sm:w-44 shrink-0">
+              <span class="font-moul text-sm sm:text-base text-[#85621E] tabular-nums">ម៉ោង ០៩:០០ ព្រឹក</span>
+              <span class="block text-xs text-[#2B2B2B]/60">09:00 AM · ពេលព្រឹក</span>
+            </div>
+            <div class="flex-1">
+              <h3 class="font-moul text-base sm:text-lg text-[#4A1525]">ពិធីកាត់សក់បង្កក់សិរី</h3>
+              <p class="font-battambang text-sm text-[#2B2B2B]/85 mt-1">
+                ពិធីកាត់សក់បង្កក់សិរីសួស្តីជូនកូនប្រុស-កូនស្រី អមដោយភ្លេងប្រពៃណីខ្មែរ។
+              </p>
+            </div>
+          </div>
+
+          <div data-period="morning" class="program-item py-5 flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6">
+            <div class="sm:w-44 shrink-0">
+              <span class="font-moul text-sm sm:text-base text-[#85621E] tabular-nums">ម៉ោង ១០:៣០ ព្រឹក</span>
+              <span class="block text-xs text-[#2B2B2B]/60">10:30 AM · ពេលព្រឹក</span>
+            </div>
+            <div class="flex-1">
+              <h3 class="font-moul text-base sm:text-lg text-[#4A1525]">ពិធីបង្វិលពពិល និង ពិធីចងដៃ</h3>
+              <p class="font-battambang text-sm text-[#2B2B2B]/85 mt-1">
+                ពិធីបង្វិលពពិលប្រាំពីរជុំ បាចផ្កាស្លា និងចងដៃប្រសិទ្ធពរជ័យសិរីមង្គលដល់គូស្វាមីភរិយាថ្មី និងពិសាអាហារថ្ងៃត្រង់។
+              </p>
+            </div>
+          </div>
+
+          <div data-period="evening" class="program-item py-5 flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6">
+            <div class="sm:w-44 shrink-0">
+              <span class="font-moul text-sm sm:text-base text-[#4A1525] tabular-nums">ម៉ោង ០៥:០០ ល្ងាច</span>
+              <span class="block text-xs text-[#85621E] font-medium">05:00 PM · ពេលល្ងាច</span>
+            </div>
+            <div class="flex-1">
+              <h3 class="font-moul text-base sm:text-lg text-[#4A1525]">ពិធីជប់លៀងពិសាភោជនាហារពេលល្ងាច</h3>
+              <p class="font-battambang text-sm text-[#2B2B2B]/85 mt-1">
+                ទទួលស្វាគមន៍ភ្ញៀវកិត្តិយស ថតរូបអនុស្សាវរីយ៍ និងពិសាភោជនាហារពេលល្ងាច នៅមជ្ឈមណ្ឌលសន្និបាត និងពិព័រណ៍កោះពេជ្រ (អគារ A &amp; B) ដោយមេត្រីភាព។
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Calendar Action -->
+        <div class="mt-8 pt-6 border-t border-[#C5A059]/25 flex flex-wrap items-center justify-between gap-4">
+          <p class="font-battambang text-xs sm:text-sm text-[#2B2B2B]/75">
+            សូមមេត្តាកត់ត្រាថ្ងៃមង្គលការទុកក្នុងប្រតិទិនទូរស័ព្ទរបស់លោកអ្នក
+          </p>
+          <button
+            type="button"
+            id="download-ics-btn"
+            class="px-5 py-2.5 min-h-[44px] rounded-xl border border-[#4A1525] text-[#4A1525] hover:bg-[#4A1525] hover:text-[#FFFDF9] text-xs sm:text-sm font-medium transition-colors whitespace-nowrap cursor-pointer"
+          >
+            កត់ត្រាទុកក្នុងប្រតិទិន (Save to Calendar)
+          </button>
+        </div>
+      </section>
+
+      <!-- =================================================================== -->
+      <!-- 4. LOCATION & MAP (ទីតាំងកម្មវិធី និងផែនទី)                          -->
+      <!-- =================================================================== -->
+      <section id="location-section" class="kbach-border-card rounded-3xl p-6 sm:p-12">
+        <div class="text-center max-w-2xl mx-auto mb-8">
+          <p class="font-editorial text-sm tracking-[0.2em] text-[#85621E] uppercase">Venue &amp; Directions</p>
+          <h2 class="font-moul text-xl sm:text-3xl gold-heading-dark mt-1" style="text-wrap: balance;">
+            ទីតាំងកម្មវិធី និងផែនទី
+          </h2>
+          <p class="font-moul text-base sm:text-lg text-[#4A1525] mt-3">
+            មជ្ឈមណ្ឌលសន្និបាត និងពិព័រណ៍កោះពេជ្រ (អគារ A &amp; B)
+          </p>
+          <p class="font-battambang text-sm sm:text-base text-[#2B2B2B]/80 mt-1">
+            សង្កាត់ទន្លេបាសាក់ ខណ្ឌចំការមន រាជធានីភ្នំពេញ · Koh Pich Convention &amp; Exhibition Center, Phnom Penh
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-7 rounded-2xl overflow-hidden border border-[#C5A059]/40 bg-[#FDF2F4] p-4 sm:p-6">
+            <div class="flex items-center justify-between mb-3">
+              <span class="font-moul text-xs sm:text-sm text-[#4A1525]">ប្លង់ទីតាំងប្រារព្ធពិធី (កោះពេជ្រ អគារ A &amp; B)</span>
+              <span class="text-xs text-[#85621E]">ចុចលើចំណុចទីតាំងដើម្បីមើលព័ត៌មាន</span>
+            </div>
+
+            <div class="relative rounded-xl overflow-hidden border border-[#C5A059]/30 bg-[#FFFDF9]">
+              <svg viewBox="0 0 600 340" class="w-full h-auto block" role="img" aria-label="ផែនទីទីតាំងមជ្ឈមណ្ឌលកោះពេជ្រ អគារ A និង B">
+                <rect width="600" height="340" fill="#FFF9FA"/>
+                <path d="M0 280 Q180 260 360 285 T600 270 L600 340 L0 340 Z" fill="#E6EEF4"/>
+                <text x="460" y="318" fill="#5B7A94" font-size="12" font-family="Kantumruy Pro, sans-serif">ទន្លេបាសាក់ · Tonle Bassac River</text>
+
+                <path d="M60 340 L120 230 L120 30" stroke="#F0E2E5" stroke-width="26" fill="none" stroke-linecap="round"/>
+                <path d="M60 340 L120 230 L120 30" stroke="#D7B899" stroke-width="2" stroke-dasharray="6 6" fill="none"/>
+                <path d="M120 165 L540 165" stroke="#F0E2E5" stroke-width="28" fill="none"/>
+                <path d="M120 165 L540 165" stroke="#D7B899" stroke-width="2" stroke-dasharray="6 6" fill="none"/>
+                <text x="145" y="158" fill="#85621E" font-size="11" font-family="Kantumruy Pro, sans-serif">មហាវិថីកោះពេជ្រ · Koh Pich Blvd</text>
+
+                <rect x="38" y="252" width="110" height="24" rx="6" fill="#4A1525"/>
+                <text x="93" y="268" text-anchor="middle" fill="#F5E1A4" font-size="10" font-family="Kantumruy Pro, sans-serif">ស្ពាននាគភ្លោះកោះពេជ្រ</text>
+
+                <rect x="170" y="42" width="125" height="90" rx="10" fill="#FDF2F4" stroke="#C5A059" stroke-width="1.5" stroke-dasharray="4 3"/>
+                <text x="232" y="82" text-anchor="middle" fill="#4A1525" font-size="12" font-weight="600" font-family="Kantumruy Pro, sans-serif">ចំណតរថយន្ត VIP</text>
+                <text x="232" y="102" text-anchor="middle" fill="#85621E" font-size="10" font-family="Kantumruy Pro, sans-serif">Spacious Free Parking</text>
+
+                <rect x="330" y="34" width="220" height="104" rx="12" fill="#4A1525" stroke="#C5A059" stroke-width="2.5"/>
+                <rect x="340" y="44" width="200" height="84" rx="8" fill="none" stroke="#F5E1A4" stroke-width="1" stroke-opacity="0.5"/>
+                <text x="440" y="75" text-anchor="middle" fill="#F5E1A4" font-size="14" font-weight="bold" font-family="Kantumruy Pro, sans-serif">សាលមហោស្រព អគារ A &amp; B</text>
+                <text x="440" y="96" text-anchor="middle" fill="#FFF5F7" font-size="11" font-family="Kantumruy Pro, sans-serif">ពិធីមង្គលការ សុវណ្ណារិទ្ធ ♥ ចាន់មុនី</text>
+                <text x="440" y="114" text-anchor="middle" fill="#E5C882" font-size="10" font-family="Cormorant Garamond, serif">Grand Wedding Hall A &amp; B</text>
+
+                <rect x="350" y="195" width="180" height="52" rx="10" fill="#FDF2F4" stroke="#C5A059" stroke-width="1.5"/>
+                <text x="440" y="218" text-anchor="middle" fill="#4A1525" font-size="11" font-weight="600" font-family="Kantumruy Pro, sans-serif">ខ្លោងទ្វារផ្កាទទួលភ្ញៀវ &amp; ថតរូប</text>
+                <text x="440" y="235" text-anchor="middle" fill="#85621E" font-size="10" font-family="Kantumruy Pro, sans-serif">Welcome Floral Arch</text>
+              </svg>
+            </div>
+
+            <div class="mt-4 flex flex-wrap items-center justify-between gap-2 text-xs text-[#2B2B2B]/80">
+              <span>ចំណតរថយន្តធំទូលាយ (៥០០+ គ្រឿង)</span>
+              <span aria-hidden="true">·</span>
+              <span>ច្រកចូលតាមស្ពាននាគភ្លោះ ឬ ស្ពានឥន្ទធនូ</span>
+              <span aria-hidden="true">·</span>
+              <button
+                type="button"
+                id="copy-address-btn"
+                class="text-[#4A1525] font-semibold underline hover:text-[#85621E] cursor-pointer min-h-[36px] px-1"
+              >
+                ចម្លងអាសយដ្ឋាន (Copy Address)
+              </button>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5 flex flex-col items-center text-center p-6 rounded-2xl bg-[#FDF2F4]/90 border border-[#C5A059]/35">
+            <p class="font-moul text-sm sm:text-base text-[#4A1525] mb-1">
+              ស្កេន QR Code ដើម្បីមើលផែនទី
+            </p>
+            <p class="text-xs text-[#85621E] mb-4">
+              Scan with your camera to open Google Maps navigation
+            </p>
+
+            <div class="p-4 bg-white rounded-2xl border-2 border-[#C5A059] shadow-sm mb-5">
+              <svg class="w-40 h-40 text-[#380D1A]" viewBox="0 0 120 120" fill="currentColor" role="img" aria-label="QR Code សម្រាប់ទីតាំង Google Maps">
+                <path d="M8 8h28v28H8V8zm4 4v20h20V12H12zm4 4h12v12H16V16z"/>
+                <path d="M84 8h28v28H84V8zm4 4v20h20V12H88zm4 4h12v12H92V16z"/>
+                <path d="M8 84h28v28H8V84zm4 4v20h20V88H12zm4 4h12v12H16V92z"/>
+                <rect x="44" y="8" width="6" height="6"/><rect x="56" y="8" width="12" height="6"/><rect x="72" y="14" width="6" height="12"/>
+                <rect x="44" y="20" width="12" height="6"/><rect x="62" y="26" width="6" height="6"/>
+                <rect x="8" y="44" width="6" height="12"/><rect x="20" y="44" width="12" height="6"/><rect x="38" y="44" width="6" height="6"/>
+                <rect x="84" y="44" width="12" height="6"/><rect x="102" y="44" width="10" height="6"/><rect x="90" y="56" width="6" height="12"/>
+                <rect x="14" y="62" width="12" height="6"/><rect x="32" y="56" width="6" height="12"/><rect x="104" y="68" width="8" height="8"/>
+                <rect x="44" y="84" width="12" height="6"/><rect x="62" y="84" width="6" height="12"/><rect x="74" y="90" width="12" height="6"/>
+                <rect x="92" y="84" width="18" height="6"/><rect x="86" y="96" width="8" height="14"/><rect x="102" y="100" width="10" height="12"/>
+                <rect x="44" y="102" width="14" height="10"/><rect x="66" y="104" width="12" height="8"/>
+                <rect x="46" y="46" width="28" height="28" rx="6" fill="#FFF5F7" stroke="#C5A059" stroke-width="2"/>
+                <path d="M60 51c-3.8 0-7 3-7 6.8 0 5.1 7 11.2 7 11.2s7-6.1 7-11.2c0-3.8-3.2-6.8-7-6.8zm0 9.2a2.5 2.5 0 110-5 2.5 2.5 0 010 5z" fill="#4A1525"/>
+              </svg>
+            </div>
+
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Koh+Pich+City+Hall+Phnom+Penh+Cambodia"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-full py-3 px-5 min-h-[48px] rounded-xl bg-[#4A1525] hover:bg-[#380D1A] text-[#FFFDF9] font-kantumruy font-medium text-sm flex items-center justify-center gap-2 shadow-md transition-colors whitespace-nowrap"
+            >
+              <svg class="w-4 h-4 text-[#F5E1A4] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+              <span>បើកមើលក្នុង Google Maps</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================================================================== -->
+      <!-- 5. PHOTO GALLERY (អាល់ប៊ុមរូបថត Pre-Wedding — វិចិត្រសាល)          -->
+      <!-- =================================================================== -->
+      <section id="gallery-section" class="kbach-border-card rounded-3xl p-6 sm:p-12">
+        <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
+          <div>
+            <p class="font-editorial text-sm tracking-[0.2em] text-[#85621E] uppercase">Pre-Wedding Portrait Collection</p>
+            <h2 class="font-moul text-xl sm:text-3xl gold-heading-dark mt-1">
+              វិចិត្រសាល
+            </h2>
+            <p class="font-battambang text-sm text-[#2B2B2B]/80 mt-1">
+              កម្រងរូបថតអនុស្សាវរីយ៍ក្នុងឈុតប្រពៃណីខ្មែរ និងឈុតរាត្រីសមោសរ (ចុចលើរូបថតដើម្បីពង្រីក)
+            </p>
+          </div>
+
+          <div class="inline-flex items-center gap-1 p-1 bg-[#FDF2F4] border border-[#C5A059]/35 rounded-xl self-start">
+            <button
+              type="button"
+              data-gallery-filter="all"
+              class="gallery-tab-btn px-3.5 py-2 min-h-[40px] text-xs font-medium rounded-lg transition-colors whitespace-nowrap cursor-pointer bg-[#4A1525] text-[#FFFDF9]"
+            >
+              ទាំងអស់ (4)
+            </button>
+            <button
+              type="button"
+              data-gallery-filter="traditional"
+              class="gallery-tab-btn px-3.5 py-2 min-h-[40px] text-xs font-medium rounded-lg transition-colors whitespace-nowrap cursor-pointer text-[#4A1525] hover:bg-[#4A1525]/10"
+            >
+              ឈុតប្រពៃណីខ្មែរ
+            </button>
+            <button
+              type="button"
+              data-gallery-filter="modern"
+              class="gallery-tab-btn px-3.5 py-2 min-h-[40px] text-xs font-medium rounded-lg transition-colors whitespace-nowrap cursor-pointer text-[#4A1525] hover:bg-[#4A1525]/10"
+            >
+              ឈុតរាត្រីសមោសរ
+            </button>
+          </div>
+        </div>
+
+        <!-- Curated Portrait Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-5" id="gallery-grid">
+          <!-- Photo 1: Royal Gold Traditional Attire (3:4) -->
+          <article
+            data-category="traditional"
+            data-index="0"
+            tabindex="0"
+            role="button"
+            aria-label="មើលរូបថត៖ ឈុតព្រះថោងតោងស្បៃនាងនាគពណ៌មាស"
+            class="gallery-card lg:col-span-4 group relative rounded-2xl overflow-hidden border border-[#C5A059]/40 bg-gradient-to-br from-[#4A1525] to-[#2B0913] aspect-[3/4] cursor-pointer focus:outline-none focus-visible:ring-4 focus-visible:ring-[#4A1525]"
+          >
+            <img
+              src="/src/assets/images/khmer_wedding_traditional_gold_1791098505274.jpg"
+              alt="គូស្វាមីភរិយាថ្មីក្នុងឈុតប្រពៃណីខ្មែរពណ៌មាស សំពត់ហូល និងស្បៃប៉ាក់ឌិនមាស"
+              referrerPolicy="no-referrer"
+              loading="lazy"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-transparent flex flex-col justify-end p-5">
+              <p class="text-xs text-[#F5E1A4]">ឈុតប្រពៃណីខ្មែរ · Royal Gold Silk</p>
+              <h3 class="font-moul text-sm sm:text-base text-white mt-0.5">ឈុតព្រះថោងតោងស្បៃនាងនាគ</h3>
+            </div>
+          </article>
+
+          <!-- Photo 2: Traditional Sampah Phtem Ceremony (4:3) -->
+          <article
+            data-category="traditional"
+            data-index="1"
+            tabindex="0"
+            role="button"
+            aria-label="មើលរូបថត៖ ឈុតពិធីសំពះផ្ទឹមប្រពៃណីខ្មែរ"
+            class="gallery-card lg:col-span-4 group relative rounded-2xl overflow-hidden border border-[#C5A059]/40 bg-gradient-to-br from-[#4A1525] to-[#2B0913] aspect-[3/4] cursor-pointer focus:outline-none focus-visible:ring-4 focus-visible:ring-[#4A1525]"
+          >
+            <img
+              src="/src/assets/images/khmer_wedding_ceremony_couple_1791098517497.jpg"
+              alt="គូស្វាមីភរិយាថ្មីក្នុងពិធីសំពះផ្ទឹមប្រពៃណីខ្មែរ ពណ៌ឈាមជ្រូក និងមាស"
+              referrerPolicy="no-referrer"
+              loading="lazy"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-transparent flex flex-col justify-end p-5">
+              <p class="text-xs text-[#F5E1A4]">ឈុតប្រពៃណីខ្មែរ · Sampah Phtem Attire</p>
+              <h3 class="font-moul text-sm sm:text-base text-white mt-0.5">ឈុតសំពះផ្ទឹមពណ៌ឈាមជ្រូកមាស</h3>
+            </div>
+          </article>
+
+          <!-- Photo 3: Modern Luxury Evening Gown & Tuxedo (3:4) -->
+          <article
+            data-category="modern"
+            data-index="2"
+            tabindex="0"
+            role="button"
+            aria-label="មើលរូបថត៖ ឈុតរាត្រីសមោសរប្រណីត"
+            class="gallery-card lg:col-span-4 group relative rounded-2xl overflow-hidden border border-[#C5A059]/40 bg-gradient-to-br from-[#4A1525] to-[#2B0913] aspect-[3/4] cursor-pointer focus:outline-none focus-visible:ring-4 focus-visible:ring-[#4A1525]"
+          >
+            <img
+              src="/src/assets/images/khmer_wedding_modern_evening_1791098530081.jpg"
+              alt="គូស្វាមីភរិយាថ្មីក្នុងឈុតរាត្រីសមោសរទំនើប រ៉ូបកូនក្រមុំពណ៌ស និងឈុតអាវធំ"
+              referrerPolicy="no-referrer"
+              loading="lazy"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-transparent flex flex-col justify-end p-5">
+              <p class="text-xs text-[#F5E1A4]">ឈុតរាត្រីសមោសរ · Evening Gala Couture</p>
+              <h3 class="font-moul text-sm sm:text-base text-white mt-0.5">ឈុតរាត្រីសមោសរប្រណីត</h3>
+            </div>
+          </article>
+
+          <!-- Photo 4: Wide Pre-Wedding Sunset Temple Colonnade (16:9 full width) -->
+          <article
+            data-category="traditional"
+            data-index="3"
+            tabindex="0"
+            role="button"
+            aria-label="មើលរូបថត៖ កម្រងរូបថត Pre-Wedding ពេលថ្ងៃលិច"
+            class="gallery-card sm:col-span-2 lg:col-span-12 group relative rounded-2xl overflow-hidden border border-[#C5A059]/40 bg-gradient-to-br from-[#4A1525] to-[#2B0913] aspect-[16/9] max-h-[420px] cursor-pointer focus:outline-none focus-visible:ring-4 focus-visible:ring-[#4A1525]"
+          >
+            <img
+              src="/src/assets/images/khmer_wedding_prewedding_sunset_1791098542176.jpg"
+              alt="រូបថត Pre-Wedding របស់គូស្វាមីភរិយាថ្មីក្នុងឈុតហូលផាមួងពណ៌ផ្កាឈូកស្រាលនាពេលថ្ងៃលិច"
+              referrerPolicy="no-referrer"
+              loading="lazy"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-transparent flex flex-col justify-end p-6">
+              <p class="text-xs text-[#F5E1A4]">ឈុតប្រពៃណីខ្មែរ · Golden Hour Pre-Wedding</p>
+              <h3 class="font-moul text-base sm:text-xl text-white mt-0.5">ស្នេហាភក្តីក្រោមពន្លឺព្រះអាទិត្យអស្តង្គត</h3>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- =================================================================== -->
+      <!-- 6. GUEST WISHES / RSVP (ផ្ញើសារជូនពរ និង បញ្ជាក់ការចូលរួម)          -->
+      <!-- =================================================================== -->
+      <section id="wishes-section" class="kbach-border-card rounded-3xl p-6 sm:p-12">
+        <div class="text-center max-w-2xl mx-auto mb-8">
+          <p class="font-editorial text-sm tracking-[0.2em] text-[#85621E] uppercase">Guestbook &amp; Blessings</p>
+          <h2 class="font-moul text-xl sm:text-3xl gold-heading-dark mt-1">
+            ផ្ញើសារជូនពរ និង បញ្ជាក់ការចូលរួម
+          </h2>
+          <p class="font-battambang text-sm sm:text-base text-[#2B2B2B]/80 mt-2">
+            សូមមេត្តាផ្ញើសារជូនពរជ័យមង្គលដល់គូស្វាមីភរិយាថ្មី
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+          <form id="wish-form" class="lg:col-span-5 space-y-4 bg-[#FDF2F4]/85 p-6 rounded-2xl border border-[#C5A059]/35">
+            <div>
+              <label for="guest-name-input" class="block font-battambang text-sm font-bold text-[#4A1525] mb-1.5">
+                ឈ្មោះភ្ញៀវកិត្តិយស (Guest Name) *
+              </label>
+              <input
+                id="guest-name-input"
+                type="text"
+                required
+                placeholder="ឈ្មោះរបស់លោកអ្នក..."
+                class="w-full px-4 py-3 min-h-[44px] rounded-xl bg-white border border-[#C5A059]/45 text-sm text-[#2B2B2B] focus:outline-none focus:ring-2 focus:ring-[#4A1525]"
+              />
+            </div>
+
+            <div>
+              <label for="guest-attendance-select" class="block font-battambang text-sm font-bold text-[#4A1525] mb-1.5">
+                ការចូលរួម (RSVP Status)
+              </label>
+              <select
+                id="guest-attendance-select"
+                class="w-full px-4 py-3 min-h-[44px] rounded-xl bg-white border border-[#C5A059]/45 text-sm text-[#2B2B2B] focus:outline-none focus:ring-2 focus:ring-[#4A1525]"
+              >
+                <option value="ចូលរួមដោយក្ដីរីករាយ">ចូលរួមដោយក្ដីរីករាយ (Will Attend)</option>
+                <option value="ចូលរួមកម្មវិធីពេលព្រឹក">ចូលរួមកម្មវិធីពេលព្រឹក (Morning Ceremony)</option>
+                <option value="ចូលរួមពិធីជប់លៀងពេលល្ងាច">ចូលរួមពិធីជប់លៀងពេលល្ងាច (Evening Banquet)</option>
+                <option value="ផ្ញើសារជូនពរពីចម្ងាយ">ផ្ញើសារជូនពរពីចម្ងាយ (Sending Blessings)</option>
+              </select>
+            </div>
+
+            <div>
+              <div class="flex items-center justify-between mb-1.5">
+                <label for="guest-message-input" class="block font-battambang text-sm font-bold text-[#4A1525]">
+                  សារជូនពរ (Best Wishes Message) *
+                </label>
+                <button
+                  type="button"
+                  id="insert-blessing-btn"
+                  class="text-xs text-[#85621E] underline hover:text-[#4A1525] cursor-pointer"
+                >
+                  + គំរូពាក្យជូនពរ
+                </button>
+              </div>
+              <textarea
+                id="guest-message-input"
+                rows="4"
+                required
+                placeholder="សរសេរសារជូនពរ..."
+                class="w-full px-4 py-3 rounded-xl bg-white border border-[#C5A059]/45 text-sm text-[#2B2B2B] focus:outline-none focus:ring-2 focus:ring-[#4A1525]"
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              class="w-full py-3 px-6 min-h-[48px] rounded-xl bg-[#4A1525] hover:bg-[#380D1A] text-[#FFFDF9] font-moul text-sm flex items-center justify-center gap-2 shadow-md transition-colors cursor-pointer"
+            >
+              <span>ផ្ញើ (Submit Wish)</span>
+            </button>
+            <p id="wish-feedback" class="text-xs text-[#4A1525] font-medium text-center hidden" role="status"></p>
+          </form>
+
+          <div class="lg:col-span-7 flex flex-col">
+            <div class="flex items-center justify-between pb-3 mb-3 border-b border-[#C5A059]/30">
+              <span class="font-moul text-sm text-[#4A1525]">
+                សារជូនពរពីភ្ញៀវកិត្តិយស (<span id="wishes-count" class="tabular-nums">0</span>)
+              </span>
+              <span class="text-xs text-[#85621E]">រក្សាទុកដោយស្វ័យប្រវត្តិ</span>
+            </div>
+
+            <div
+              id="wishes-list"
+              class="space-y-3 max-h-[420px] overflow-y-auto pr-1 divide-y divide-[#C5A059]/20"
+              aria-live="polite"
+            ></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================================================================== -->
+      <!-- 7. DIGITAL GIFT QR CODE / ធៀបចំណងដៃ (Angpao / Gift QR)             -->
+      <!-- =================================================================== -->
+      <section id="gift-section" class="kbach-border-card rounded-3xl p-6 sm:p-12 text-center">
+        <div class="max-w-2xl mx-auto mb-8">
+          <p class="font-editorial text-sm tracking-[0.2em] text-[#85621E] uppercase">Wedding Gift &amp; Angpao</p>
+          <h2 class="font-moul text-xl sm:text-3xl gold-heading-dark mt-1">
+            ចំណងដៃ
+          </h2>
+          <p class="font-battambang text-sm sm:text-base text-[#2B2B2B]/85 mt-2">
+            Open your banking app and scan this QR code to send your gift
+          </p>
+          <p class="font-battambang text-xs sm:text-sm text-[#85621E] mt-1">
+            សូមបើកកម្មវិធីធនាគាររបស់លោកអ្នក រួចស្កេន QR Code ខាងក្រោមដើម្បីផ្ញើចំណងដៃជូនពរគូស្វាមីភរិយាថ្មី
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
+          <!-- Groom's ABA KHQR Card -->
+          <div class="p-6 rounded-2xl bg-[#FDF2F4]/90 border border-[#C5A059]/45 flex flex-col items-center">
+            <div class="w-full py-2 px-4 rounded-t-xl bg-[#4A1525] text-[#F5E1A4] font-moul text-xs sm:text-sm tracking-wide">
+              គណនីកូនកំលោះ · Groom's ABA KHQR
+            </div>
+            <div class="p-4 bg-white rounded-b-xl border-x border-b border-[#C5A059]/35 w-full flex flex-col items-center">
+              <svg class="w-44 h-44 text-[#2B2B2B] my-2" viewBox="0 0 120 120" fill="currentColor" role="img" aria-label="Groom ABA KHQR Code">
+                <path d="M8 8h28v28H8V8zm4 4v20h20V12H12zm4 4h12v12H16V16z"/>
+                <path d="M84 8h28v28H84V8zm4 4v20h20V12H88zm4 4h12v12H92V16z"/>
+                <path d="M8 84h28v28H8V84zm4 4v20h20V88H12zm4 4h12v12H16V92z"/>
+                <rect x="42" y="10" width="8" height="8"/><rect x="56" y="10" width="14" height="6"/><rect x="44" y="24" width="12" height="6"/><rect x="64" y="22" width="12" height="10"/>
+                <rect x="10" y="44" width="12" height="6"/><rect x="28" y="48" width="8" height="12"/><rect x="12" y="64" width="10" height="12"/>
+                <rect x="84" y="44" width="10" height="10"/><rect x="100" y="46" width="12" height="6"/><rect x="88" y="62" width="16" height="8"/>
+                <rect x="44" y="84" width="10" height="12"/><rect x="60" y="86" width="14" height="6"/><rect x="80" y="84" width="12" height="12"/>
+                <rect x="98" y="88" width="14" height="8"/><rect x="84" y="102" width="24" height="10"/><rect x="52" y="102" width="20" height="8"/>
+                <rect x="45" y="45" width="30" height="30" rx="6" fill="#4A1525" stroke="#C5A059" stroke-width="2"/>
+                <text x="60" y="64" text-anchor="middle" fill="#F5E1A4" font-size="10" font-weight="bold" font-family="sans-serif">ABA</text>
+              </svg>
+              <p class="font-bold text-sm text-[#4A1525] mt-1">CHEA SOVANNARITH</p>
+              <p class="text-xs text-[#85621E] tabular-nums mt-0.5">ABA: 001 889 922 (USD / KHR)</p>
+              <button
+                type="button"
+                data-copy-account="001889922"
+                data-copy-label="លេខគណនី ABA កូនកំលោះ"
+                class="copy-acc-btn mt-3 px-4 py-2 min-h-[40px] rounded-lg border border-[#C5A059] text-xs font-medium text-[#4A1525] hover:bg-[#4A1525] hover:text-white transition-colors cursor-pointer"
+              >
+                ចម្លងលេខគណនី (001 889 922)
+              </button>
+            </div>
+          </div>
+
+          <!-- Bride's Bakong KHQR Card -->
+          <div class="p-6 rounded-2xl bg-[#FDF2F4]/90 border border-[#C5A059]/45 flex flex-col items-center">
+            <div class="w-full py-2 px-4 rounded-t-xl bg-[#4A1525] text-[#F5E1A4] font-moul text-xs sm:text-sm tracking-wide">
+              គណនីកូនក្រមុំ · Bride's Bakong KHQR
+            </div>
+            <div class="p-4 bg-white rounded-b-xl border-x border-b border-[#C5A059]/35 w-full flex flex-col items-center">
+              <svg class="w-44 h-44 text-[#2B2B2B] my-2" viewBox="0 0 120 120" fill="currentColor" role="img" aria-label="Bride Bakong KHQR Code">
+                <path d="M8 8h28v28H8V8zm4 4v20h20V12H12zm4 4h12v12H16V16z"/>
+                <path d="M84 8h28v28H84V8zm4 4v20h20V12H88zm4 4h12v12H92V16z"/>
+                <path d="M8 84h28v28H8V84zm4 4v20h20V88H12zm4 4h12v12H16V92z"/>
+                <rect x="44" y="12" width="14" height="6"/><rect x="64" y="10" width="10" height="10"/><rect x="42" y="24" width="8" height="10"/><rect x="58" y="26" width="16" height="6"/>
+                <rect x="10" y="46" width="8" height="14"/><rect x="24" y="44" width="12" height="8"/><rect x="16" y="66" width="16" height="8"/>
+                <rect x="86" y="44" width="14" height="6"/><rect x="104" y="48" width="8" height="12"/><rect x="84" y="60" width="12" height="12"/>
+                <rect x="42" y="86" width="16" height="6"/><rect x="64" y="84" width="10" height="12"/><rect x="82" y="88" width="14" height="8"/>
+                <rect x="100" y="84" width="12" height="12"/><rect x="86" y="102" width="22" height="8"/><rect x="46" y="100" width="24" height="10"/>
+                <rect x="45" y="45" width="30" height="30" rx="6" fill="#851E2E" stroke="#C5A059" stroke-width="2"/>
+                <text x="60" y="64" text-anchor="middle" fill="#F5E1A4" font-size="9" font-weight="bold" font-family="sans-serif">KHQR</text>
+              </svg>
+              <p class="font-bold text-sm text-[#4A1525] mt-1">HENG CHANMONY</p>
+              <p class="text-xs text-[#85621E] tabular-nums mt-0.5">Bakong / ABA: 002 778 811 (USD / KHR)</p>
+              <button
+                type="button"
+                data-copy-account="002778811"
+                data-copy-label="លេខគណនី Bakong កូនក្រមុំ"
+                class="copy-acc-btn mt-3 px-4 py-2 min-h-[40px] rounded-lg border border-[#C5A059] text-xs font-medium text-[#4A1525] hover:bg-[#4A1525] hover:text-white transition-colors cursor-pointer"
+              >
+                ចម្លងលេខគណនី (002 778 811)
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================================================================== -->
+      <!-- TRADITIONAL KHMER TEMPLE & ROYAL PEACOCK FOOTER MOTIF              -->
+      <!-- =================================================================== -->
+      <footer class="pt-8 pb-12 text-center relative overflow-hidden">
+        <div class="max-w-3xl mx-auto text-[#B38A38]/45 mb-6" aria-hidden="true">
+          <svg viewBox="0 0 800 150" fill="none" class="w-full h-auto">
+            <path d="M110 130 C80 125 55 100 65 75 C72 60 90 65 95 80 C102 65 118 55 128 40 C134 55 130 85 115 105 C140 95 165 105 175 130 Z" stroke="currentColor" stroke-width="1.8" fill="currentColor" fill-opacity="0.12"/>
+            <circle cx="126" cy="44" r="3" fill="currentColor"/>
+            <path d="M690 130 C720 125 745 100 735 75 C728 60 710 65 705 80 C698 65 682 55 672 40 C666 55 670 85 685 105 C660 95 635 105 625 130 Z" stroke="currentColor" stroke-width="1.8" fill="currentColor" fill-opacity="0.12"/>
+            <circle cx="674" cy="44" r="3" fill="currentColor"/>
+            <path d="M220 135 H580 L565 115 H535 L520 70 L505 45 L490 70 L480 115 H455 L440 55 L425 85 L415 35 L400 12 L385 35 L375 85 L360 55 L345 115 H320 L310 70 L295 45 L280 70 L265 115 H235 Z" fill="currentColor" fill-opacity="0.18" stroke="currentColor" stroke-width="1.5"/>
+            <line x1="60" y1="136" x2="740" y2="136" stroke="currentColor" stroke-width="1.5"/>
+          </svg>
+        </div>
+
+        <p class="font-moul text-base sm:text-lg text-[#4A1525]">
+          សូមថ្លែងអំណរគុណយ៉ាងជ្រាលជ្រៅ
+        </p>
+        <p class="font-battambang text-xs sm:text-sm text-[#85621E] mt-1">
+          វត្តមានដ៏ឧត្តុង្គឧត្តមរបស់ឯកឧត្តម លោកជំទាវ លោក លោកស្រី គឺជាកិត្តិយសដ៏ខ្ពង់ខ្ពស់បំផុតសម្រាប់គ្រួសារយើងខ្ញុំទាំងពីរ។
+        </p>
+      </footer>
+    </main>
+
+    <!-- FLOATING BACKGROUND MUSIC CONTROLLER -->
+    <div class="fixed bottom-5 right-5 z-40 flex items-center gap-2">
+      <audio id="bg-wedding-audio" loop preload="none"></audio>
+      <button
+        type="button"
+        id="music-toggle-btn"
+        aria-label="បើក ឬ បិទភ្លេងមង្គលការ"
+        aria-pressed="false"
+        class="group relative flex items-center gap-2.5 pl-2 pr-4 py-2 min-h-[48px] rounded-full bg-[#4A1525] text-[#FFFDF9] border-2 border-[#C5A059] shadow-xl hover:bg-[#380D1A] transition-transform active:scale-95 cursor-pointer"
+      >
+        <span
+          id="music-disc-icon"
+          class="w-9 h-9 rounded-full bg-gradient-to-tr from-[#2B0913] via-[#4A1525] to-[#C5A059] border border-[#F5E1A4] flex items-center justify-center shrink-0"
+        >
+          <svg class="w-4 h-4 text-[#F5E1A4]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 18V5l12-2v13"/>
+            <circle cx="6" cy="18" r="3"/>
+            <circle cx="18" cy="16" r="3"/>
+          </svg>
+        </span>
+        <span class="text-left">
+          <span id="music-status-label" class="block font-kantumruy text-xs font-semibold text-[#F5E1A4] whitespace-nowrap">
+            ភ្លេងមង្គលការ · បិទ
+          </span>
+          <span class="block text-[10px] text-[#FFF5F7]/80 whitespace-nowrap">Khmer Pinpeat Melody</span>
+        </span>
+      </button>
+    </div>
+
+    <!-- LIGHTBOX MODAL FOR PHOTO GALLERY -->
+    <div
+      id="lightbox-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-label="ពិនិត្យមើលរូបថតពេញអេក្រង់"
+      class="fixed inset-0 z-50 bg-black/90 backdrop-blur-md hidden items-center justify-center p-4"
+    >
+      <div class="relative max-w-4xl w-full flex flex-col items-center">
+        <div class="w-full flex items-center justify-between text-white mb-3 px-2">
+          <div>
+            <p id="lightbox-subtitle" class="text-xs text-[#F5E1A4]"></p>
+            <h3 id="lightbox-title" class="font-moul text-sm sm:text-lg text-white"></h3>
+          </div>
+          <button
+            type="button"
+            id="lightbox-close-btn"
+            aria-label="បិទរូបថត"
+            class="w-11 h-11 rounded-full bg-white/15 hover:bg-white/25 text-white flex items-center justify-center text-lg cursor-pointer"
+          >
+            ✕
+          </button>
+        </div>
+
+        <div class="relative w-full max-h-[75vh] flex items-center justify-center overflow-hidden rounded-2xl border border-[#C5A059]/50 bg-[#2B0913]">
+          <img
+            id="lightbox-img"
+            src=""
+            alt=""
+            referrerPolicy="no-referrer"
+            class="max-h-[75vh] w-auto object-contain"
+          />
+        </div>
+
+        <div class="flex items-center justify-between w-full mt-4 px-2">
+          <button
+            type="button"
+            id="lightbox-prev-btn"
+            class="px-4 py-2 min-h-[44px] rounded-xl bg-white/10 hover:bg-white/20 text-white text-xs sm:text-sm cursor-pointer"
+          >
+            ← រូបមុន (Prev)
+          </button>
+          <span id="lightbox-counter" class="text-xs text-[#F5E1A4] tabular-nums">1 / 4</span>
+          <button
+            type="button"
+            id="lightbox-next-btn"
+            class="px-4 py-2 min-h-[44px] rounded-xl bg-white/10 hover:bg-white/20 text-white text-xs sm:text-sm cursor-pointer"
+          >
+            រូបបន្ទាប់ (Next) →
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- GUEST NAME CUSTOMIZATION MODAL -->
+    <div
+      id="guest-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-label="កំណត់ឈ្មោះភ្ញៀវកិត្តិយសលើធៀបអញ្ជើញ"
+      class="fixed inset-0 z-50 bg-black/75 backdrop-blur-sm hidden items-center justify-center p-4"
+    >
+      <div class="bg-[#FFF5F7] border-2 border-[#C5A059] rounded-2xl max-w-md w-full p-6 shadow-2xl">
+        <h3 class="font-moul text-lg text-[#4A1525] mb-1">កំណត់ឈ្មោះភ្ញៀវកិត្តិយស</h3>
+        <p class="font-battambang text-xs text-[#2B2B2B]/80 mb-4">
+          វាយបញ្ចូល ឬជ្រើសរើសគោរមងារ និងឈ្មោះភ្ញៀវកិត្តិយសដើម្បីបង្ហាញលើទ្វារធៀបមង្គលការ៖
+        </p>
+        <input
+          id="custom-guest-input"
+          type="text"
+          value="ឯកឧត្តម លោកជំទាវ លោក លោកស្រី អ្នកនាងកញ្ញា"
+          class="w-full px-4 py-3 min-h-[44px] rounded-xl bg-white border border-[#C5A059] text-sm text-[#2B2B2B] mb-3"
+        />
+        <div class="flex flex-wrap gap-1.5 mb-5">
+          <button type="button" data-preset-guest="ឯកឧត្តម បណ្ឌិត សុខ សម្បត្តិ និង លោកជំទាវ" class="preset-guest-btn text-xs px-2.5 py-1.5 rounded-lg bg-[#FDF2F4] border border-[#C5A059]/40 text-[#4A1525] hover:bg-[#4A1525] hover:text-white cursor-pointer">
+            ឯកឧត្តម បណ្ឌិត សុខ សម្បត្តិ និង លោកជំទាវ
+          </button>
+          <button type="button" data-preset-guest="អ្នកឧកញ៉ា លី ហួរ និង លោកជំទាវ" class="preset-guest-btn text-xs px-2.5 py-1.5 rounded-lg bg-[#FDF2F4] border border-[#C5A059]/40 text-[#4A1525] hover:bg-[#4A1525] hover:text-white cursor-pointer">
+            អ្នកឧកញ៉ា លី ហួរ និង លោកជំទាវ
+          </button>
+          <button type="button" data-preset-guest="លោក ចាន់ វណ្ណា និង ភរិយា" class="preset-guest-btn text-xs px-2.5 py-1.5 rounded-lg bg-[#FDF2F4] border border-[#C5A059]/40 text-[#4A1525] hover:bg-[#4A1525] hover:text-white cursor-pointer">
+            លោក ចាន់ វណ្ណា និង ភរិយា
+          </button>
+        </div>
+        <div class="flex items-center justify-end gap-2">
+          <button
+            type="button"
+            id="guest-modal-cancel"
+            class="px-4 py-2 min-h-[40px] rounded-xl text-xs font-medium text-[#2B2B2B] hover:bg-black/5 cursor-pointer"
+          >
+            បោះបង់
+          </button>
+          <button
+            type="button"
+            id="guest-modal-save"
+            class="px-5 py-2 min-h-[40px] rounded-xl bg-[#4A1525] text-[#FFFDF9] text-xs font-medium cursor-pointer"
+          >
+            រក្សាទុកឈ្មោះភ្ញៀវ
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- TOAST NOTIFICATION BANNER -->
+    <div
+      id="toast-banner"
+      role="status"
+      aria-live="polite"
+      class="fixed bottom-20 left-1/2 -translate-x-1/2 z-50 px-5 py-2.5 rounded-xl bg-[#380D1A] text-[#F5E1A4] border border-[#C5A059] shadow-xl text-xs sm:text-sm font-kantumruy opacity-0 pointer-events-none transition-opacity duration-200"
+    ></div>
+
+    <!-- ===================================================================== -->
+    <!-- VANILLA JAVASCRIPT APPLICATION CONTROLLER                             -->
+    <!-- ===================================================================== -->
+    <script>
+      (function () {
+        'use strict';
+
+        // 1. Toast Notification Helper
+        const toastBanner = document.getElementById('toast-banner');
+        let toastTimer = null;
+        function showToast(message) {
+          if (!toastBanner) return;
+          toastBanner.textContent = message;
+          toastBanner.classList.remove('opacity-0');
+          toastBanner.classList.add('opacity-100');
+          if (toastTimer) clearTimeout(toastTimer);
+          toastTimer = setTimeout(() => {
+            toastBanner.classList.remove('opacity-100');
+            toastBanner.classList.add('opacity-0');
+          }, 2800);
+        }
+
+        // 2. Weather Component Integration with Google Search Grounding API
+        async function fetchWeddingWeather(isManual = false) {
+          const refreshBtn = document.getElementById('refresh-weather-btn');
+          const refreshIcon = document.getElementById('refresh-weather-icon');
+          if (refreshIcon) refreshIcon.classList.add('animate-spin');
+
+          try {
+            const res = await fetch('/api/weather');
+            if (!res.ok) throw new Error('Network response error');
+            const data = await res.json();
+
+            // Populate Weather Metrics
+            const tempDay = document.getElementById('wt-temp-day');
+            const tempNight = document.getElementById('wt-temp-night');
+            const condKhmer = document.getElementById('wt-condition-khmer');
+            const condEn = document.getElementById('wt-condition-en');
+            const rain = document.getElementById('wt-rain');
+            const humidity = document.getElementById('wt-humidity');
+            const wind = document.getElementById('wt-wind');
+            const advice = document.getElementById('wt-advice');
+            const sourcesList = document.getElementById('wt-sources-list');
+
+            if (tempDay && data.tempDay) tempDay.textContent = data.tempDay;
+            if (tempNight && data.tempNight) tempNight.textContent = data.tempNight;
+            if (condKhmer && data.conditionKhmer) condKhmer.textContent = data.conditionKhmer;
+            if (condEn && data.conditionEnglish) condEn.textContent = data.conditionEnglish;
+            if (rain && data.rainChance) rain.textContent = data.rainChance;
+            if (humidity && data.humidity) humidity.textContent = data.humidity;
+            if (wind && data.wind) wind.textContent = data.wind;
+            if (advice && data.adviceKhmer) {
+              advice.innerHTML = `<strong class="text-[#4A1525] font-semibold">ការណែនាំ៖</strong> ${data.adviceKhmer}`;
+            }
+
+            // Render Search Grounding Sources Citations
+            if (sourcesList && Array.isArray(data.sources) && data.sources.length > 0) {
+              sourcesList.innerHTML = data.sources
+                .map(
+                  (s, idx) => `
+                  ${idx > 0 ? '<span aria-hidden="true">·</span>' : ''}
+                  <a href="${s.uri}" target="_blank" rel="noopener noreferrer" class="hover:underline text-[#4A1525] font-medium inline-flex items-center gap-0.5">
+                    <span>${s.title}</span>
+                    <span class="text-[9px]">↗</span>
+                  </a>
+                `
+                )
+                .join('');
+            }
+
+            if (isManual) {
+              showToast('បានធ្វើបច្ចុប្បន្នភាពអាកាសធាតុតាម Google Search!');
+            }
+          } catch (err) {
+            console.warn('Weather fetch fallback active:', err);
+            if (isManual) {
+              showToast('បានបង្ហាញទិន្នន័យអាកាសធាតុរាជធានីភ្នំពេញ');
+            }
+          } finally {
+            if (refreshIcon) refreshIcon.classList.remove('animate-spin');
+          }
+        }
+
+        const refreshWeatherBtn = document.getElementById('refresh-weather-btn');
+        if (refreshWeatherBtn) {
+          refreshWeatherBtn.addEventListener('click', () => fetchWeddingWeather(true));
+        }
+        fetchWeddingWeather(false);
+
+        // 3. Khmer Traditional Pinpeat / Khim Web Audio Synthesizer
+        let audioCtx = null;
+        let isMusicPlaying = false;
+        let melodyInterval = null;
+        let noteStep = 0;
+        const khmerMelodyNotes = [
+          523.25, 587.33, 659.25, 783.99, 880.00, 783.99, 659.25, 587.33,
+          523.25, 659.25, 783.99, 1046.50, 880.00, 783.99, 659.25, 523.25,
+          440.00, 523.25, 587.33, 659.25, 783.99, 659.25, 587.33, 523.25
+        ];
+
+        function playKhmerNote(freq, isAccent) {
+          if (!audioCtx || audioCtx.state !== 'running') return;
+          const now = audioCtx.currentTime;
+          const osc = audioCtx.createOscillator();
+          const subOsc = audioCtx.createOscillator();
+          const gain = audioCtx.createGain();
+
+          osc.type = 'sine';
+          subOsc.type = 'triangle';
+          osc.frequency.setValueAtTime(freq, now);
+          subOsc.frequency.setValueAtTime(freq * 0.5, now);
+
+          gain.gain.setValueAtTime(0.001, now);
+          gain.gain.exponentialRampToValueAtTime(isAccent ? 0.085 : 0.055, now + 0.03);
+          gain.gain.exponentialRampToValueAtTime(0.0008, now + 1.45);
+
+          osc.connect(gain);
+          subOsc.connect(gain);
+          gain.connect(audioCtx.destination);
+
+          osc.start(now);
+          subOsc.start(now);
+          osc.stop(now + 1.5);
+          subOsc.stop(now + 1.5);
+        }
+
+        function updateMusicUI() {
+          const discIcon = document.getElementById('music-disc-icon');
+          const statusLabel = document.getElementById('music-status-label');
+          const toggleBtn = document.getElementById('music-toggle-btn');
+          if (!discIcon || !statusLabel || !toggleBtn) return;
+
+          toggleBtn.setAttribute('aria-pressed', String(isMusicPlaying));
+          if (isMusicPlaying) {
+            discIcon.classList.add('disc-spinning');
+            statusLabel.textContent = 'ភ្លេងមង្គលការ · កំពុងលេង';
+          } else {
+            discIcon.classList.remove('disc-spinning');
+            statusLabel.textContent = 'ភ្លេងមង្គលការ · បិទ';
+          }
+        }
+
+        function startTraditionalMusic() {
+          try {
+            const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+            if (!audioCtx && AudioContextClass) {
+              audioCtx = new AudioContextClass();
+            }
+            if (audioCtx && audioCtx.state === 'suspended') {
+              audioCtx.resume();
+            }
+            if (!isMusicPlaying) {
+              isMusicPlaying = true;
+              playKhmerNote(khmerMelodyNotes[0], true);
+              melodyInterval = setInterval(() => {
+                if (!isMusicPlaying) return;
+                noteStep = (noteStep + 1) % khmerMelodyNotes.length;
+                playKhmerNote(khmerMelodyNotes[noteStep], noteStep % 4 === 0);
+              }, 680);
+              updateMusicUI();
+            }
+          } catch (err) {
+            console.warn('Web Audio could not start automatically:', err);
+          }
+        }
+
+        function stopTraditionalMusic() {
+          isMusicPlaying = false;
+          if (melodyInterval) {
+            clearInterval(melodyInterval);
+            melodyInterval = null;
+          }
+          updateMusicUI();
+        }
+
+        const musicToggleBtn = document.getElementById('music-toggle-btn');
+        if (musicToggleBtn) {
+          musicToggleBtn.addEventListener('click', () => {
+            if (isMusicPlaying) {
+              stopTraditionalMusic();
+              showToast('បានផ្អាកភ្លេងប្រពៃណីមង្គលការ');
+            } else {
+              startTraditionalMusic();
+              showToast('កំពុងលេងភ្លេងប្រពៃណីខ្មែរ សិរីមង្គល');
+            }
+          });
+        }
+
+        // 4. Interactive Opening Door Cover
+        const gateOverlay = document.getElementById('gate-overlay');
+        const openInvitationBtn = document.getElementById('open-invitation-btn');
+        const replayGateBtn = document.getElementById('replay-gate-btn');
+        const appBody = document.getElementById('app-body');
+
+        function openWeddingGates() {
+          if (!gateOverlay) return;
+          startTraditionalMusic();
+          gateOverlay.classList.add('gates-open');
+          if (appBody) appBody.classList.remove('overflow-hidden');
+          setTimeout(() => {
+            gateOverlay.classList.add('pointer-events-none');
+          }, 1200);
+        }
+
+        function closeWeddingGates() {
+          if (!gateOverlay) return;
+          gateOverlay.classList.remove('pointer-events-none');
+          gateOverlay.classList.remove('gates-open');
+          if (appBody) appBody.classList.add('overflow-hidden');
+        }
+
+        if (openInvitationBtn) openInvitationBtn.addEventListener('click', openWeddingGates);
+        if (replayGateBtn) replayGateBtn.addEventListener('click', closeWeddingGates);
+
+        // Guest Name Personalization
+        const gateGuestName = document.getElementById('gate-guest-name');
+        const innerGuestName = document.getElementById('inner-guest-name');
+        const guestModal = document.getElementById('guest-modal');
+        const customizeGuestBtn = document.getElementById('customize-guest-btn');
+        const customGuestInput = document.getElementById('custom-guest-input');
+        const guestModalCancel = document.getElementById('guest-modal-cancel');
+        const guestModalSave = document.getElementById('guest-modal-save');
+
+        function applyGuestName(name) {
+          const cleanName = (name || '').trim() || 'ឯកឧត្តម លោកជំទាវ លោក លោកស្រី អ្នកនាងកញ្ញា';
+          if (gateGuestName) gateGuestName.textContent = cleanName;
+          if (innerGuestName) innerGuestName.textContent = cleanName;
+          if (customGuestInput) customGuestInput.value = cleanName;
+        }
+
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('guest')) {
+          applyGuestName(urlParams.get('guest'));
+        }
+
+        if (customizeGuestBtn && guestModal) {
+          customizeGuestBtn.addEventListener('click', () => {
+            guestModal.classList.remove('hidden');
+            guestModal.classList.add('flex');
+          });
+        }
+        if (guestModalCancel && guestModal) {
+          guestModalCancel.addEventListener('click', () => {
+            guestModal.classList.add('hidden');
+            guestModal.classList.remove('flex');
+          });
+        }
+        if (guestModalSave && guestModal && customGuestInput) {
+          guestModalSave.addEventListener('click', () => {
+            applyGuestName(customGuestInput.value);
+            guestModal.classList.add('hidden');
+            guestModal.classList.remove('flex');
+            showToast('បានកែប្រែឈ្មោះភ្ញៀវកិត្តិយសលើធៀបមង្គលការ');
+          });
+        }
+        document.querySelectorAll('.preset-guest-btn').forEach((btn) => {
+          btn.addEventListener('click', () => {
+            const preset = btn.getAttribute('data-preset-guest');
+            if (preset && customGuestInput) customGuestInput.value = preset;
+          });
+        });
+
+        // 5. Floating Rose Petal Animation
+        const petalContainer = document.getElementById('petal-container');
+        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if (petalContainer && !prefersReducedMotion) {
+          const petals = [];
+          for (let i = 0; i < 14; i++) {
+            const el = document.createElement('div');
+            el.className = 'petal-item';
+            const size = 12 + Math.random() * 10;
+            el.innerHTML = `<svg width="${size}" height="${size}" viewBox="0 0 24 24" fill="none">
+              <path d="M12 2C7 2 4 7 4 12C4 18 12 22 12 22C12 22 20 18 20 12C20 7 17 2 12 2Z" fill="${i % 3 === 0 ? '#E5C882' : '#E8A5B2'}" fill-opacity="0.55"/>
+            </svg>`;
+            petalContainer.appendChild(el);
+            petals.push({
+              el,
+              x: Math.random() * window.innerWidth,
+              y: Math.random() * window.innerHeight,
+              speedY: 0.45 + Math.random() * 0.75,
+              swayAmp: 18 + Math.random() * 25,
+              swaySpeed: 0.008 + Math.random() * 0.012,
+              angle: Math.random() * 360,
+              spinSpeed: (Math.random() - 0.5) * 0.8,
+              tick: Math.random() * 1000
+            });
+          }
+          function animatePetals() {
+            const h = window.innerHeight;
+            const w = window.innerWidth;
+            for (let i = 0; i < petals.length; i++) {
+              const p = petals[i];
+              p.tick += 1;
+              p.y += p.speedY;
+              p.angle += p.spinSpeed;
+              if (p.y > h + 40) {
+                p.y = -30;
+                p.x = Math.random() * w;
+              }
+              const currentX = p.x + Math.sin(p.tick * p.swaySpeed) * p.swayAmp;
+              p.el.style.transform = `translate3d(${currentX.toFixed(1)}px, ${p.y.toFixed(1)}px, 0) rotate(${p.angle.toFixed(1)}deg)`;
+            }
+            requestAnimationFrame(animatePetals);
+          }
+          requestAnimationFrame(animatePetals);
+        }
+
+        // 6. Countdown Timer
+        const weddingTargetTime = new Date('2026-11-14T07:00:00+07:00').getTime();
+        const cdDays = document.getElementById('cd-days');
+        const cdHours = document.getElementById('cd-hours');
+        const cdMins = document.getElementById('cd-mins');
+        const cdSecs = document.getElementById('cd-secs');
+        function updateCountdown() {
+          const now = Date.now();
+          const diff = Math.max(0, weddingTargetTime - now);
+          const d = Math.floor(diff / (1000 * 60 * 60 * 24));
+          const h = Math.floor((diff / (1000 * 60 * 60)) % 24);
+          const m = Math.floor((diff / 1000 / 60) % 60);
+          const s = Math.floor((diff / 1000) % 60);
+          if (cdDays) cdDays.textContent = String(d).padStart(2, '0');
+          if (cdHours) cdHours.textContent = String(h).padStart(2, '0');
+          if (cdMins) cdMins.textContent = String(m).padStart(2, '0');
+          if (cdSecs) cdSecs.textContent = String(s).padStart(2, '0');
+        }
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+
+        // 7. Program Filter Tabs & Calendar Download
+        const programTabBtns = document.querySelectorAll('.program-tab-btn');
+        const programItems = document.querySelectorAll('.program-item');
+        programTabBtns.forEach((btn) => {
+          btn.addEventListener('click', () => {
+            const filter = btn.getAttribute('data-program-filter');
+            programTabBtns.forEach((b) => {
+              const active = b === btn;
+              b.className = active
+                ? 'program-tab-btn px-4 py-2 min-h-[40px] text-xs sm:text-sm font-medium rounded-lg transition-colors whitespace-nowrap cursor-pointer bg-[#4A1525] text-[#FFFDF9]'
+                : 'program-tab-btn px-4 py-2 min-h-[40px] text-xs sm:text-sm font-medium rounded-lg transition-colors whitespace-nowrap cursor-pointer text-[#4A1525] hover:bg-[#4A1525]/10';
+            });
+            programItems.forEach((item) => {
+              const period = item.getAttribute('data-period');
+              if (filter === 'all' || period === filter) item.classList.remove('hidden');
+              else item.classList.add('hidden');
+            });
+          });
+        });
+
+        const downloadIcsBtn = document.getElementById('download-ics-btn');
+        if (downloadIcsBtn) {
+          downloadIcsBtn.addEventListener('click', () => {
+            const icsContent = [
+              'BEGIN:VCALENDAR',
+              'VERSION:2.0',
+              'PRODID:-//Khmer Luxury Wedding//KM',
+              'BEGIN:VEVENT',
+              'DTSTART:20261114T000000Z',
+              'DTEND:20261114T150000Z',
+              'SUMMARY:ពិធីមង្គលការ ជា សុវណ្ណារិទ្ធ & ហេង ចាន់មុនី',
+              'LOCATION:Koh Pich Convention and Exhibition Center (Building A & B), Phnom Penh',
+              'DESCRIPTION:សូមគោរពអញ្ជើញចូលរួមពិធីសិរីមង្គលអាពាហ៍ពិពាហ៍ ជា សុវណ្ណារិទ្ធ និង ហេង ចាន់មុនី',
+              'END:VEVENT',
+              'END:VCALENDAR'
+            ].join('\r\n');
+            const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'sovannarith-chanmony-wedding.ics';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+            showToast('បានទាញយកឯកសារប្រតិទិនមង្គលការ (.ics)');
+          });
+        }
+
+        // 8. Photo Gallery & Fullscreen Lightbox
+        const galleryItemsData = [
+          {
+            src: '/src/assets/images/khmer_wedding_traditional_gold_1791098505274.jpg',
+            title: 'ឈុតព្រះថោងតោងស្បៃនាងនាគ',
+            subtitle: 'ឈុតប្រពៃណីខ្មែរ · Royal Gold Silk Attire'
+          },
+          {
+            src: '/src/assets/images/khmer_wedding_ceremony_couple_1791098517497.jpg',
+            title: 'ឈុតសំពះផ្ទឹមពណ៌ឈាមជ្រូកមាស',
+            subtitle: 'ឈុតប្រពៃណីខ្មែរ · Traditional Sampah Phtem Ceremony'
+          },
+          {
+            src: '/src/assets/images/khmer_wedding_modern_evening_1791098530081.jpg',
+            title: 'ឈុតរាត្រីសមោសរប្រណីត',
+            subtitle: 'ឈុតរាត្រីសមោសរ · Evening Gala Couture'
+          },
+          {
+            src: '/src/assets/images/khmer_wedding_prewedding_sunset_1791098542176.jpg',
+            title: 'ស្នេហាភក្តីក្រោមពន្លឺព្រះអាទិត្យអស្តង្គត',
+            subtitle: 'ឈុតប្រពៃណីខ្មែរ · Golden Hour Pre-Wedding'
+          }
+        ];
+
+        const galleryTabBtns = document.querySelectorAll('.gallery-tab-btn');
+        const galleryCards = document.querySelectorAll('.gallery-card');
+        galleryTabBtns.forEach((btn) => {
+          btn.addEventListener('click', () => {
+            const filter = btn.getAttribute('data-gallery-filter');
+            galleryTabBtns.forEach((b) => {
+              const active = b === btn;
+              b.className = active
+                ? 'gallery-tab-btn px-3.5 py-2 min-h-[40px] text-xs font-medium rounded-lg transition-colors whitespace-nowrap cursor-pointer bg-[#4A1525] text-[#FFFDF9]'
+                : 'gallery-tab-btn px-3.5 py-2 min-h-[40px] text-xs font-medium rounded-lg transition-colors whitespace-nowrap cursor-pointer text-[#4A1525] hover:bg-[#4A1525]/10';
+            });
+            galleryCards.forEach((card) => {
+              const cat = card.getAttribute('data-category');
+              if (filter === 'all' || cat === filter) card.classList.remove('hidden');
+              else card.classList.add('hidden');
+            });
+          });
+        });
+
+        const lightboxModal = document.getElementById('lightbox-modal');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const lightboxTitle = document.getElementById('lightbox-title');
+        const lightboxSubtitle = document.getElementById('lightbox-subtitle');
+        const lightboxCounter = document.getElementById('lightbox-counter');
+        const lightboxCloseBtn = document.getElementById('lightbox-close-btn');
+        const lightboxPrevBtn = document.getElementById('lightbox-prev-btn');
+        const lightboxNextBtn = document.getElementById('lightbox-next-btn');
+        let currentPhotoIndex = 0;
+
+        function openLightbox(index) {
+          currentPhotoIndex = (index + galleryItemsData.length) % galleryItemsData.length;
+          const item = galleryItemsData[currentPhotoIndex];
+          if (lightboxImg) {
+            lightboxImg.src = item.src;
+            lightboxImg.alt = item.title;
+          }
+          if (lightboxTitle) lightboxTitle.textContent = item.title;
+          if (lightboxSubtitle) lightboxSubtitle.textContent = item.subtitle;
+          if (lightboxCounter) lightboxCounter.textContent = `${currentPhotoIndex + 1} / ${galleryItemsData.length}`;
+          if (lightboxModal) {
+            lightboxModal.classList.remove('hidden');
+            lightboxModal.classList.add('flex');
+          }
+        }
+
+        function closeLightbox() {
+          if (lightboxModal) {
+            lightboxModal.classList.add('hidden');
+            lightboxModal.classList.remove('flex');
+          }
+        }
+
+        galleryCards.forEach((card) => {
+          card.addEventListener('click', () => {
+            const idx = Number(card.getAttribute('data-index') || 0);
+            openLightbox(idx);
+          });
+          card.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              e.preventDefault();
+              const idx = Number(card.getAttribute('data-index') || 0);
+              openLightbox(idx);
+            }
+          });
+        });
+
+        if (lightboxCloseBtn) lightboxCloseBtn.addEventListener('click', closeLightbox);
+        if (lightboxPrevBtn) lightboxPrevBtn.addEventListener('click', () => openLightbox(currentPhotoIndex - 1));
+        if (lightboxNextBtn) lightboxNextBtn.addEventListener('click', () => openLightbox(currentPhotoIndex + 1));
+        if (lightboxModal) {
+          lightboxModal.addEventListener('click', (e) => {
+            if (e.target === lightboxModal) closeLightbox();
+          });
+        }
+        window.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape') closeLightbox();
+        });
+
+        // 9. Guest Wishes with localStorage persistence
+        const STORAGE_KEY = 'khmer_wedding_wishes_v1';
+        const defaultWishes = [
+          {
+            id: 'w-1',
+            name: 'ឯកឧត្តម សុខ ចាន់ថា និង លោកជំទាវ',
+            attendance: 'ចូលរួមដោយក្ដីរីករាយ',
+            message: 'សូមជូនពរក្មួយទាំងពីរទទួលបាននូវសុភមង្គល សុខភាពល្អបរិបូរណ៍ និងស្រឡាញ់គ្នាជារៀងរហូតតទៅ។',
+            time: '១០ នាទីមុន'
+          },
+          {
+            id: 'w-2',
+            name: 'លោក លី ម៉េងហួរ និង ភរិយា',
+            attendance: 'ចូលរួមពិធីជប់លៀងពេលល្ងាច',
+            message: 'អបអរសាទរថ្ងៃមង្គលជ័យ! សូមជូនពរគូស្វាមីភរិយាថ្មីរកទទួលទានមានបាន ត្រជាក់ត្រជុំដូចទឹកអម្រឹត។',
+            time: '៣៥ នាទីមុន'
+          },
+          {
+            id: 'w-3',
+            name: 'កញ្ញា ទេពី សុជាតា',
+            attendance: 'ចូលរួមដោយក្ដីរីករាយ',
+            message: 'Wishing Sovannarith & Chanmony a lifetime of love, harmony, and endless blessings!',
+            time: '១ ម៉ោងមុន'
+          }
+        ];
+
+        function loadWishes() {
+          try {
+            const raw = localStorage.getItem(STORAGE_KEY);
+            if (!raw) {
+              localStorage.setItem(STORAGE_KEY, JSON.stringify(defaultWishes));
+              return defaultWishes;
+            }
+            const parsed = JSON.parse(raw);
+            return Array.isArray(parsed) && parsed.length > 0 ? parsed : defaultWishes;
+          } catch (e) {
+            return defaultWishes;
+          }
+        }
+
+        function saveWishes(list) {
+          try {
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(list));
+          } catch (e) {
+            console.warn('Could not save wishes', e);
+          }
+        }
+
+        const wishesListEl = document.getElementById('wishes-list');
+        const wishesCountEl = document.getElementById('wishes-count');
+
+        function escapeHtml(str) {
+          return String(str)
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#039;');
+        }
+
+        function renderWishes() {
+          const wishes = loadWishes();
+          if (wishesCountEl) wishesCountEl.textContent = String(wishes.length);
+          if (!wishesListEl) return;
+          wishesListEl.innerHTML = wishes
+            .map(
+              (w) => `
+              <article class="py-3.5 first:pt-0">
+                <div class="flex items-baseline justify-between gap-2">
+                  <h3 class="font-moul text-xs sm:text-sm text-[#4A1525]">${escapeHtml(w.name)}</h3>
+                  <span class="text-xs text-[#85621E] shrink-0">${escapeHtml(w.attendance)} · ${escapeHtml(w.time)}</span>
+                </div>
+                <p class="font-battambang text-sm text-[#2B2B2B] mt-1.5 leading-relaxed">${escapeHtml(w.message)}</p>
+              </article>
+            `
+            )
+            .join('');
+        }
+        renderWishes();
+
+        const sampleBlessings = [
+          'សូមជូនពរគូស្វាមីភរិយាថ្មី ទទួលបានសុភមង្គល សុខភាពល្អ និងរកទទួលទានមានបានជារៀងរហូត!',
+          'សូមប្រសិទ្ធពរជ័យ សិរីសួស្តី ជ័យមង្គល វិបុលសុខគ្រប់ប្រការ ជូនដល់គូស្វាមីភរិយាថ្មី!',
+          'អបអរសាទរថ្ងៃមង្គលការ! សូមឱ្យចំណងអាពាហ៍ពិពាហ៍រឹងមាំ ផ្អែមល្ហែម និងត្រជាក់ត្រជុំជានិរន្តរ៍។'
+        ];
+        let blessingIdx = 0;
+        const insertBlessingBtn = document.getElementById('insert-blessing-btn');
+        const guestMessageInput = document.getElementById('guest-message-input');
+        if (insertBlessingBtn && guestMessageInput) {
+          insertBlessingBtn.addEventListener('click', () => {
+            guestMessageInput.value = sampleBlessings[blessingIdx % sampleBlessings.length];
+            blessingIdx += 1;
+            guestMessageInput.focus();
+          });
+        }
+
+        const wishForm = document.getElementById('wish-form');
+        const guestNameInput = document.getElementById('guest-name-input');
+        const guestAttendanceSelect = document.getElementById('guest-attendance-select');
+        const wishFeedback = document.getElementById('wish-feedback');
+        if (wishForm) {
+          wishForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = guestNameInput ? guestNameInput.value.trim() : '';
+            const message = guestMessageInput ? guestMessageInput.value.trim() : '';
+            const attendance = guestAttendanceSelect ? guestAttendanceSelect.value : 'ចូលរួមដោយក្ដីរីករាយ';
+            if (!name || !message) return;
+
+            const currentWishes = loadWishes();
+            currentWishes.unshift({
+              id: 'w-' + Date.now(),
+              name,
+              attendance,
+              message,
+              time: 'ទើបតែផ្ញើមុននេះ'
+            });
+            saveWishes(currentWishes);
+            renderWishes();
+
+            if (guestNameInput) guestNameInput.value = '';
+            if (guestMessageInput) guestMessageInput.value = '';
+            if (wishFeedback) {
+              wishFeedback.textContent = 'សូមអរគុណ! សារជូនពររបស់លោកអ្នកត្រូវបានកត់ត្រាទុកដោយជោគជ័យ។';
+              wishFeedback.classList.remove('hidden');
+              setTimeout(() => wishFeedback.classList.add('hidden'), 4000);
+            }
+            showToast('បានផ្ញើសារជូនពរដោយជោគជ័យ!');
+          });
+        }
+
+        // 10. Copy Address and Bank Accounts
+        function copyTextToClipboard(text, successMsg) {
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(text).then(() => showToast(successMsg));
+          } else {
+            const temp = document.createElement('textarea');
+            temp.value = text;
+            document.body.appendChild(temp);
+            temp.select();
+            document.execCommand('copy');
+            document.body.removeChild(temp);
+            showToast(successMsg);
+          }
+        }
+
+        const copyAddressBtn = document.getElementById('copy-address-btn');
+        if (copyAddressBtn) {
+          copyAddressBtn.addEventListener('click', () => {
+            copyTextToClipboard(
+              'មជ្ឈមណ្ឌលសន្និបាត និងពិព័រណ៍កោះពេជ្រ (អគារ A & B), សង្កាត់ទន្លេបាសាក់, ខណ្ឌចំការមន, រាជធានីភ្នំពេញ',
+              'បានចម្លងអាសយដ្ឋានទីតាំងកម្មវិធី!'
+            );
+          });
+        }
+
+        document.querySelectorAll('.copy-acc-btn').forEach((btn) => {
+          btn.addEventListener('click', () => {
+            const acc = btn.getAttribute('data-copy-account') || '';
+            const label = btn.getAttribute('data-copy-label') || 'លេខគណនី';
+            copyTextToClipboard(acc, `បានចម្លង ${label}: ${acc}`);
+          });
+        });
+      })();
+    </script>
+  </body>
+</html>

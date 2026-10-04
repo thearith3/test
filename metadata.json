@@ -1,0 +1,6 @@
+{
+  "name": "សិរីមង្គលអាពាហ៍ពិពាហ៍ — Khmer Luxury Wedding E-Invitation",
+  "description": "Traditional Khmer Luxury Wedding Digital E-Invitation for Sovannarith & Chanmony featuring interactive royal gates, ceremony schedule with Google Search grounded weather forecast, photo gallery, RSVP wishes, and digital gift QR codes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
